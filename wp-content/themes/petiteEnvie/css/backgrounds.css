@@ -1,0 +1,296 @@
+.panel {
+	color: white;
+	margin: 0 auto;
+	padding: 0;
+	background: no-repeat fixed center center;
+	background-size:cover;
+}
+/* iPad [portrait + landscape] */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+
+	.panel {
+		background: no-repeat scroll center center;
+	}
+
+}
+
+/*process page*/
+
+.process .panel {
+	background-image: url(/tt.php?src=/resources/img/backgrounds/process.jpg&w=1200);
+}
+
+/*about page*/
+
+.about .panel-1 {
+	background-image: url('../img/illustration_1.jpg');
+	
+}
+
+.about .panel-2 {
+	background-image: url('../img/1_2.png');
+}
+
+.about .panel-3 {
+	background-image: url('../img/1_3.png');
+}
+
+.about .panel-4 {
+	background-image: url(/tt.php?src=/resources/img/backgrounds/about-4.jpg&w=1200);
+}
+
+.about .panel-5 {
+	background-image: url(/tt.php?src=/resources/img/backgrounds/about-5.jpg&w=1200);
+}
+
+.about .panel-6 {
+	background-image: url(/tt.php?src=/resources/img/backgrounds/about-6.jpg&w=1200);
+}
+
+.about .panel-7 {
+	background-image: url(/tt.php?src=/resources/img/backgrounds/about-7.jpg&w=1200);
+}
+
+.about .panel-8 {
+	background-image: url(/tt.php?src=/resources/img/backgrounds/about-8.jpg&w=1200);
+}
+
+
+
+/*services page*/
+
+.services .panel-1 {
+	background-image: url(/tt.php?src=/resources/img/backgrounds/services-1.jpg&w=1200);
+}
+
+.services .panel-2 {
+	background-image: url(/tt.php?src=/resources/img/backgrounds/services-2.jpg&w=1200);
+}
+
+.services .panel-3 {
+	background-image: url(/tt.php?src=/resources/img/backgrounds/services-3.jpg&w=1200);
+}
+
+.services .panel-4 {
+	background-image: url(/tt.php?src=/resources/img/backgrounds/services-4.jpg&w=1200);
+}
+
+.services .panel-5 {
+	background-image: url(/tt.php?src=/resources/img/backgrounds/services-5.jpg&w=1200);
+}
+
+.services .panel-6 {
+	background-image: url(/tt.php?src=/resources/img/backgrounds/services-6.jpg&w=1200);
+}
+
+.services .panel-7 {
+	background-image: url(/tt.php?src=/resources/img/backgrounds/services-7.jpg&w=1200);
+}
+
+.services .panel-8 {
+	background-image: url(/tt.php?src=/resources/img/backgrounds/services-8.jpg&w=1200);
+}
+
+.services .panel-9 {
+	background-image: url(/tt.php?src=/resources/img/backgrounds/services-9.jpg&w=1200);
+}
+
+.services .panel-10 {
+	background-image: url(/tt.php?src=/resources/img/backgrounds/services-10.jpg&w=1200);
+}
+
+.services .panel-11 {
+	background-image: url(/tt.php?src=/resources/img/backgrounds/services-11.jpg&w=1200);
+}
+
+.services .panel-12 {
+	background-image: url(/tt.php?src=/resources/img/backgrounds/services-12.jpg&w=1200);
+}
+
+.services .panel-13 {
+	background-image: url(/tt.php?src=/resources/img/backgrounds/services-13.jpg&w=1200);
+}
+
+.services .panel-14 {
+	background-image: url(/tt.php?src=/resources/img/backgrounds/services-14.jpg&w=1200);
+}
+
+.services .panel-15 {
+	background-image: url(/tt.php?src=/resources/img/backgrounds/services-15.jpg&w=1200);
+}
+
+.services .panel-16 {
+	background-image: url(/tt.php?src=/resources/img/backgrounds/services-16.jpg&w=1200);
+}
+
+.services .panel-17 {
+	background-image: url(/tt.php?src=/resources/img/backgrounds/services-17.jpg&w=1200);
+}
+
+.services .panel-18 {
+	background-image: url(/tt.php?src=/resources/img/backgrounds/services-18.jpg&w=1200);
+}
+
+.services .panel-19 {
+	background-image: url(/tt.php?src=/resources/img/backgrounds/services-19a.jpg&w=1200);
+}
+
+
+
+
+/*gallery page*/
+
+.gallery .panel-1 {
+	background-image: url(/tt.php?src=/resources/img/backgrounds/gallery-1.jpg&w=1200);
+}
+
+.gallery .panel-2 {
+	background-image: url(/tt.php?src=/resources/img/backgrounds/gallery-2.jpg&w=1200);
+}
+
+.gallery .panel-3 {
+	background-image: url(/tt.php?src=/resources/img/backgrounds/gallery-3.jpg&w=1200);
+}
+
+.gallery .panel-4 {
+	background-image: url(/tt.php?src=/resources/img/backgrounds/gallery-4.jpg&w=1200);
+}
+
+.gallery .panel-5 {
+	background-image: url(/tt.php?src=/resources/img/backgrounds/gallery-5.jpg&w=1200);
+}
+
+.gallery .panel-6 {
+	background-image: url(/tt.php?src=/resources/img/backgrounds/gallery-6.jpg&w=1200);
+}
+
+.gallery .panel-7 {
+	background-image: url(/tt.php?src=/resources/img/backgrounds/gallery-7.jpg&w=1200);
+}
+
+.gallery .panel-8 {
+	background-image: url(/tt.php?src=/resources/img/backgrounds/gallery-8.jpg&w=1200);
+}
+
+.gallery .panel-9 {
+	background-image: url(/tt.php?src=/resources/img/backgrounds/gallery-9.jpg&w=1200);
+}
+
+.gallery .panel-10 {
+	background-image: url(/tt.php?src=/resources/img/backgrounds/gallery-10.jpg&w=1200);
+}
+
+.gallery .panel-11 {
+	background-image: url(/tt.php?src=/resources/img/backgrounds/gallery-11.jpg&w=1200);
+}
+
+.gallery .panel-12 {
+	background-image: url(/tt.php?src=/resources/img/backgrounds/gallery-12.jpg&w=1200);
+}
+
+.gallery .panel-13 {
+	background-image: url(/tt.php?src=/resources/img/backgrounds/gallery-13.jpg&w=1200);
+}
+
+.gallery .panel-14 {
+	background-image: url(/tt.php?src=/resources/img/backgrounds/gallery-14.jpg&w=1200);
+}
+
+.gallery .panel-15 {
+	background-image: url(/tt.php?src=/resources/img/backgrounds/gallery-15.jpg&w=1200);
+}
+
+
+
+
+
+/*case studies*/
+
+.case-studies .panel {
+	background-image:url(/tt.php?src=/resources/img/backgrounds/roundel.jpg&w=1200);
+}
+
+.case-studies .panel-1 {
+	background-image: url(/tt.php?src=/resources/img/backgrounds/services-19.jpg&w=1200);
+}
+
+.case-studies .panel-mix {
+/*	background-image: url(/tt.php?src=/resources/img/backgrounds/services-19.jpg&w=1200);*/
+}
+
+.case-studies .inbetween-1 {
+	background-image: url(/tt.php?src=/resources/img/backgrounds/case-inbetween-1.jpg&w=1200);
+}
+
+.case-studies .inbetween-2 {
+	background-image: url(/tt.php?src=/resources/img/backgrounds/case-inbetween-2.jpg&w=1200);
+}
+
+.case-studies .inbetween-3 {
+	background-image: url(/tt.php?src=/resources/img/backgrounds/case-inbetween-3.jpg&w=1200);
+}
+
+
+
+
+
+
+
+
+/*contact*/
+
+.contact .panel {
+	background-color: black;
+}
+
+
+
+
+
+
+/*venues*/
+
+.venues .panel {
+	background-image:url(/tt.php?src=/resources/img/backgrounds/roundel.jpg&w=1200);
+}
+
+
+.venues .panel-1
+{
+	background-image: url(/tt.php?src=/resources/img/backgrounds/venues-title.jpg&w=1200);
+}
+
+.venues .panel-mix {
+	background-image: url(/tt.php?src=/resources/img/backgrounds/services-1.jpg&w=1200);
+}
+
+.venues .inbetween-1 {
+	background-image: url(/tt.php?src=/resources/img/backgrounds/venue-inbetween-1.jpg&w=1200);
+}
+
+.venues .inbetween-2 {
+	background-image: url(/tt.php?src=/resources/img/backgrounds/venue-inbetween-2.jpg&w=1200);
+}
+
+.venues .inbetween-3 {
+	background-image: url(/tt.php?src=/resources/img/backgrounds/venue-inbetween-3.jpg&w=1200);
+}
+
+.venues .inbetween-4 {
+	background-image: url(/tt.php?src=/resources/img/backgrounds/venue-inbetween-4.jpg&w=1200);
+}
+
+.venues .inbetween-5 {
+	background-image: url(/tt.php?src=/resources/img/backgrounds/venue-inbetween-5.jpg&w=1200);
+}
+
+.venues .inbetween-6 {
+	background-image: url(/tt.php?src=/resources/img/backgrounds/venue-inbetween-6.jpg&w=1200);
+}
+
+.venues .inbetween-7 {
+	background-image: url(/tt.php?src=/resources/img/backgrounds/venue-inbetween-7.jpg&w=1200);
+}
+
+
+

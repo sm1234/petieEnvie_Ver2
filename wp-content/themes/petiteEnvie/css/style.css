@@ -1,0 +1,394 @@
+/* @override 
+	http://pickledwalnutcatering.co.uk/resources/css/style.css */
+
+@font-face {
+	font-family: 'maquette';
+	src: url('../fonts/ARSMaquettePro-Bold.eot');
+	src: local('‰÷¼'), url('../fonts/ARSMaquettePro-Bold.woff') format('woff'), url('../fonts/ARSMaquettePro-Bold.ttf') format('truetype'), url('../fonts/ARSMaquettePro-Bold.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'cardo';
+	src: url('../fonts/Cardo-Regular.eot');
+	src: local('‰÷¼'), url('../fonts/Cardo-Regular.woff') format('woff'), url('../fonts/Cardo-Regular.ttf') format('truetype'), url('../fonts/Cardo-Regular.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+.maquette {
+	font-family: 'maquette';
+}
+
+.mb-20 {
+	margin-bottom: 30px;
+}
+
+ul.primary {
+	background: black;
+}
+
+.services .panel-block {
+		background: url(../img/stamp.png) no-repeat center top;
+		padding-top: 50px;
+}
+
+/*desktop*/
+@media (min-width: 980px) {
+
+	.panel-block {
+		width: 50%;
+	}
+
+}
+
+/*tablet*/
+@media (max-width: 979px) and (min-width: 642px) {
+
+	.panel-block {
+		width: 70%;
+	}
+
+}
+
+/*mobile*/
+@media (max-width: 641px) {
+
+	.panel-block {
+		width: 90%;
+	}
+
+}
+
+
+
+body {
+	background: black;
+}
+
+nav {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	text-align: center;
+	z-index: 100;
+	font-family: 'maquette', sans-serif;
+
+}
+
+.footer{
+	bottom: 0;
+	width: 100%;
+	text-align: center;
+	z-index: 100;
+	font-family: 'maquette', sans-serif;	
+	
+}
+
+p {
+	font-family: 'cardo', serif;
+	font-size: 14px;
+}
+
+.process p {
+	font-size: 1.3em;
+	line-height: 1.3em;
+}
+
+.panel, .static-panel {	
+	text-align: center;
+	position: relative;
+}
+
+nav ul {
+	margin: 0;
+}
+
+nav ul li {
+	list-style: none;
+	text-transform: uppercase;
+	line-height: 35px;
+	display: inline;
+	margin: 0 10px;
+	font-size: 12px;
+}
+
+nav ul li a.active,
+nav ul li.active a {
+	text-decoration: underline;
+}
+
+nav ul li a {
+	color: white;
+}
+
+nav ul li a span {
+		letter-spacing: 0.2em;	
+}
+
+nav ul li a:hover {
+	color: white;
+}
+
+h1 {
+	background: url(../img/logo.png) no-repeat center center;
+	height: 80px;
+	text-indent: -9999em;
+	margin: 0;
+}
+
+header span{
+	font: 20px 'maquette', sans-serif;
+	color:black;
+}
+header {
+	background: black;
+	height: 80px;
+	z-index: 1;
+}
+
+.headline-block {
+	background: url(../img/stamp.png) no-repeat center top;
+}
+
+.services-block span.title {
+	text-transform: uppercase;
+	letter-spacing: 0.2em;
+	font: 40px 'maquette', sans-serif;
+}
+
+.larger {
+	font-size: 1.6em;
+	margin-bottom: 1em;
+	line-height: 1.2em;
+
+}
+
+.services-block span.name {
+	display: block;
+	font: 14px 'maquette', sans-serif;
+	text-transform: uppercase;
+	letter-spacing: 0.2em;
+	margin-bottom: 1.5em;
+	line-height: 30px;
+}
+
+.headline-block p {
+	text-transform: uppercase;
+	font: 20px 'maquette', sans-serif;
+	letter-spacing: 0.4em;
+}
+
+.text-block p.intro {
+	font-size: 2em;
+	line-height: 1.2em;
+}
+
+.headline-block span {
+	display: block;
+}
+
+.headline-block span.name {
+	font-size: 14px !important;
+	line-height: 30px !important;
+	letter-spacing: 12px !important;
+}
+
+#next-panel {
+	width: 24px;
+	height: 33px;
+	display: block;
+	position: fixed;
+	bottom: 0;
+	left: 50%;
+	margin-left: -12px;
+	z-index: 100;
+	background: url(../img/arrows.png) no-repeat bottom left;
+	text-indent: -9999em;
+}
+
+#prev-panel {
+	width: 24px;
+	height: 33px;
+	display: block;
+	position: fixed;
+	left: 50%;
+	margin-left: -12px;
+	z-index: 100;
+	background: url(../img/arrows.png) no-repeat top left;
+	text-indent: -9999em;
+}
+
+nav ul.secondary {
+	background: #444;
+}
+
+nav ul.secondary li {
+	font-size: 10px;
+}
+
+nav ul.secondary li a {
+	background: none !important;
+}
+
+
+.first {
+	margin-top: 80px !important;
+	padding-top: 20px;
+}
+
+.menu-download {
+	color: white;
+	font: 14px 'maquette', sans-serif;
+	letter-spacing: 0.2em;
+	text-transform: uppercase;
+
+}
+
+.menu-download:hover {
+	color: white
+}
+
+.process-stamp {
+	height: 135px;
+	width: 135px;
+	background: url(../img/process-stamp.png);
+	line-height: 135px;
+	font-family: 'cardo', serif;
+	font-size: 50px;
+	margin:0 auto;
+	margin-bottom: 20px;
+}
+
+.contact span.name-small
+{
+	color: white !important;
+	text-transform: uppercase;
+	font: 14px 'maquette', sans-serif !important;
+	letter-spacing: 0.2em;
+}
+
+
+.contact span.name
+{
+	color: white !important;
+	text-transform: uppercase;
+	font: 30px 'maquette', sans-serif !important;
+	letter-spacing: 0.2em;
+}
+
+.case-studies .panel span.name,
+.contact span.name,
+.venues .panel span.name
+
+{
+	color: #333;
+	text-transform: uppercase;
+	font: 20px 'maquette', sans-serif;
+	letter-spacing: 0.2em;
+	position: relative;
+	top: -0.5em;
+	position: relative;
+	top: 0px;
+}
+
+.case-studies .panel-1 p,
+.case-studies .panel-1 p span.name,
+.venues .panel-1 p span.name {
+	color: white !important;
+}
+
+.case-studies p , .venues .panel p{
+	color: #333;
+}
+
+.venues .panel-1 .first p {
+	color:white !important;
+}
+
+.contact .static-panel {
+	background: #cb7d7f !important;
+	color: white;
+}
+
+.contact header {
+	margin-bottom: 30px;
+}
+
+
+
+.contact input[type=text],
+.contact input[type=email] {
+	text-align: center;
+	font-weight: bold;
+	font-family: 'maquette', sans-serif;
+	background: #d7d5c3;
+	border: none;
+	border-radius: 0;
+	padding: 5px 10px;
+}
+
+.contact input[type=submit] {
+	background: white;
+	border: none;
+	text-align: center;
+	font-weight: bold;
+	font-family: 'maquette', sans-serif;
+	border-radius: 0;
+	padding: 5px 10px;
+	color: #ca7d7f;
+}
+
+body.contact {
+	background-color: #ca7d7f;
+}
+
+.contact a {
+	color: white;
+}
+
+
+
+#tw {
+	display:inline-block;
+	height: 40px;
+	width: 40px;
+	background: url(../img/icon_twitter.png) no-repeat center top;
+	text-indent: -9999em;
+}
+
+#fb {
+	display:inline-block;
+	height: 40px;
+	width: 40px;
+	background: url(../img/icon_facebook.png) no-repeat center top;
+	text-indent: -9999em;
+}
+
+#pin {
+	display:inline-block;
+	height: 40px;
+	width: 40px;
+	background: url(../img/icon_pinterest.png) no-repeat center top;
+	text-indent: -9999em;
+}
+
+#ins {
+	display:inline-block;
+	height: 40px;
+	width: 40px;
+	background: url(../img/icon_instagram.png) no-repeat center top;
+	text-indent: -9999em;
+}
+
+p.social {
+	margin-bottom: 20px;
+}
+
+a.venues-links {
+	font-family:'maquette', sans-serif;
+	letter-spacing:0.2em;
+	text-transform:uppercase;
+	color:#333333;
+}
