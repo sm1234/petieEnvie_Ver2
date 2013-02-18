@@ -1,5 +1,17 @@
 /* @override 
 	http://pickledwalnutcatering.co.uk/resources/css/style.css */
+.pull-right{
+	
+}
+.Oursecondary
+{
+	background-image:linear-gradient(to bottom, rgb(68,68,68),rgb(68,68,68)) !important;
+	text-align:center !important;
+}
+nav .brand {
+
+  font-size: 20px;	
+}
 
 @font-face {
 	font-family: 'maquette';
@@ -71,7 +83,7 @@ nav {
 	position: fixed;
 	top: 0;
 	width: 100%;
-	text-align: center;
+
 	z-index: 100;
 	font-family: 'maquette', sans-serif;
 
@@ -107,20 +119,20 @@ nav ul {
 
 nav ul li {
 	list-style: none;
-	text-transform: uppercase;
+	/*text-transform: uppercase;*/
 	line-height: 35px;
 	display: inline;
 	margin: 0 10px;
-	font-size: 12px;
+	font-size: 14px;
 }
 
 nav ul li a.active,
 nav ul li.active a {
-	text-decoration: underline;
+	text-decoration: none;
 }
 
 nav ul li a {
-	color: white;
+	color: rgb(153,153,153);
 }
 
 nav ul li a span {
@@ -129,6 +141,12 @@ nav ul li a span {
 
 nav ul li a:hover {
 	color: white;
+	text-decoration: none;	
+}
+
+nav ul li a:focus {
+	color: white;
+	text-decoration: underline;	
 }
 
 h1 {
@@ -225,7 +243,7 @@ nav ul.secondary {
 }
 
 nav ul.secondary li {
-	font-size: 10px;
+	font-size: 12px;
 }
 
 nav ul.secondary li a {
@@ -341,7 +359,7 @@ nav ul.secondary li a {
 }
 
 body.contact {
-	background-color: #ca7d7f;
+	background-color: rgb(203,125,127);
 }
 
 .contact a {
@@ -349,36 +367,42 @@ body.contact {
 }
 
 
-
+#msg {
+	display:inline-block;
+	height: 28px;
+	width: 28px;
+	background: url(../img/icon_message_in.png) no-repeat center top;
+	text-indent: -9999em;
+}
 #tw {
 	display:inline-block;
-	height: 40px;
-	width: 40px;
-	background: url(../img/icon_twitter.png) no-repeat center top;
+	height: 24px;
+	width: 24px;
+	background: url(../img/icon_twitter_small.png) no-repeat center top;
 	text-indent: -9999em;
 }
 
 #fb {
 	display:inline-block;
-	height: 40px;
-	width: 40px;
-	background: url(../img/icon_facebook.png) no-repeat center top;
+	height: 24px;
+	width: 24px;
+	background: url(../img/icon_facebook_small.png) no-repeat center top;
 	text-indent: -9999em;
 }
 
 #pin {
 	display:inline-block;
-	height: 40px;
-	width: 40px;
-	background: url(../img/icon_pinterest.png) no-repeat center top;
+	height: 24px;
+	width: 24px;
+	background: url(../img/icon_pinterest_small.png) no-repeat center top;
 	text-indent: -9999em;
 }
 
 #ins {
 	display:inline-block;
-	height: 40px;
-	width: 40px;
-	background: url(../img/icon_instagram.png) no-repeat center top;
+	height: 24px;
+	width: 24px;
+	background: url(../img/icon_instagram_small.png) no-repeat center top;
 	text-indent: -9999em;
 }
 

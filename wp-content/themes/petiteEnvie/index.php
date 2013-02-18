@@ -15,36 +15,12 @@
  */
 
 get_header(); ?>
-<div class="navbar navbar-inverse navbar-fixed-top">
-      <div class="navbar-inner">
-        <div class="container">
-          <button data-target=".nav-collapse" data-toggle="collapse" class="btn btn-navbar" type="button">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a href="#" class="brand">Petite Envie</a>
-          <div class="nav-collapse collapse">
-            <ul class="nav">
-              <li class="active"><a href="#">Home</a></li>
-              <li><a href="#about">About</a></li>
-              <li><a href="#contact">Contact</a></li>
-            </ul>
-            <div class="navbar-form pull-right">
-			<a title="Twitter" href="#" target="_blank" id="tw">Twitter</a>
-			<a title="Facebook" href="#" target="_blank" id="fb">Twitter</a>
-			<a title="Pinterest" href="#" target="_blank" id="pin">Twitter</a>
-			<a title="Instagram" href="#" target="_blank" id="ins">Twitter</a>
-            </div>
-          </div><!--/.nav-collapse -->
-        </div>
-      </div>
-    </div>
+
+
+
+    
 <div id="page">
 	<div style="height: 690px;" class="panel panel-1 current">
-	<header>
-	<h1></h1>
-	</header>
 		<div style="position: absolute; margin: 0px; top: 400.6px; left: 15px;" class="headline-block first center panel-block">
 			<p>Serving inspired ideas, sumptuous cakes and memorable occasions</p>
 		</div>	
@@ -66,5 +42,12 @@ get_header(); ?>
 	<div style="height: 700px;" class="panel panel-4">
 	</div>
 </div>
-<div class="footer">Here is my footer</div>
+<script type="text/javascript">
+jQuery(document).ready(function($) {
+	$(".Oursecondary").hide();
+	$("#peBody").removeClass();
+	$("#peBody").addClass("about");
+	$("#peBody").css('padding-top','35px');	
+});
+</script>
 <?php get_footer(); ?>

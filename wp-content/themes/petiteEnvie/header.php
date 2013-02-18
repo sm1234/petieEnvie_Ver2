@@ -28,7 +28,15 @@
 <link media="screen" rel="stylesheet" href="<?php bloginfo('template_directory')?>/css/bootstrap-responsive.css">
 <link media="screen" rel="stylesheet" href="<?php bloginfo('template_directory')?>/css/style.css">
 <link media="screen" rel="stylesheet" href="<?php bloginfo('template_directory')?>/css/backgrounds.css">
-
+<?php
+wp_enqueue_script("jquery");
+wp_register_script('abc', get_template_directory_uri().'/js/bootstrap.js',array('jquery'));
+wp_register_script('def', get_template_directory_uri().'/js/extra.js',array('jquery'));
+wp_register_script('ghi', get_template_directory_uri().'/js/script.js',array('jquery'));
+wp_enqueue_script('abc');
+wp_enqueue_script('def');
+wp_enqueue_script('ghi');
+?>
 <?php // Loads HTML5 JavaScript file to add support for HTML5 elements in older IE versions. ?>
 <!--[if lt IE 9]>
 <script src="<?php echo get_template_directory_uri(); ?>/js/html5.js" type="text/javascript"></script>
@@ -36,5 +44,62 @@
 <?php wp_head(); ?>
 </head>
 
-<body class="about" style="padding-top:35px;">
-<div id="page" class="hfeed site">
+<body id="peBody">
+
+<div class="navbar navbar-inverse navbar-fixed-top">
+      <div id="primaryMenu" class="navbar-inner">
+        <div class="container">
+          <button data-target=".nav-collapse" data-toggle="collapse" class="btn btn-navbar" type="button">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a href="http://localhost:8888/petieEnvie_Ver2" class="brand">Petite Envie</a>
+          <div class="nav-collapse collapse">
+            <ul class="nav">
+              <li><a href="http://localhost:8888/petieEnvie_Ver2/about/">About</a></li>
+              <li><a href="http://localhost:8888/petieEnvie_Ver2/services">Catalogue</a></li>
+              <li><a href="http://localhost:8888/petieEnvie_Ver2/services">Gallery</a></li>
+                <li><a href="http://localhost:8888/petieEnvie_Ver2/services">Blog</a></li>
+              <li><a href="http://localhost:8888/petieEnvie_Ver2/contact/">Contact</a></li>
+            </ul>
+            <ul class="nav pull-right">
+				<li id="contactUs" class="dropdown">
+                      <a href="#" id="contactUs" role="button" class="dropdown-toggle" data-toggle="dropdown">Follow Us<b class="caret"></b></a>
+                      <div class="dropdown-menu" role="menu" aria-labelledby="contactUs">
+						<table style="width:300px;">
+						<tbody><tr>
+							<td><a id="tw"></a>&nbsp;&nbsp;<a href="#">Twitter</a></td>
+							<td><a id="fb"></a>&nbsp;&nbsp;<a href="#">Facebook</a></td>
+						</tr>
+						<tr>
+							<td><a id="ins"></a>&nbsp;&nbsp;<a href="#">Instagram</a></td>
+							<td><a id="pin"></a>&nbsp;&nbsp;<a href="#">Pinterest</a></td>
+						</tr>
+					</tbody></table>
+                      </div>
+
+                </li>
+			</ul>
+
+            
+          </div><!--/.nav-collapse -->
+        </div>
+      </div>
+            <div class="navbar-inner Oursecondary">
+              <div class="container">
+          <div class="nav-collapse collapse">
+            <ul class="nav">
+              <li><a href="#">TEA CAKES</a></li>
+              <li><a href="#about">LAYER CAKES</a></li>
+              <li><a href="#contact">CUPCAKES</a></li>
+              <li><a href="#contact">CHEESECAKES</a></li>
+              <li><a href="#contact">BROWNIES</a></li>
+              <li><a href="#contact">COOKIES</a></li>
+              <li><a href="#contact">MACARONS</a></li>
+				<li><a href="#contact">MUFFINS</a></li>
+            </ul>            
+          </div><!--/.nav-collapse -->
+        </div>
+      </div>
+</div>
