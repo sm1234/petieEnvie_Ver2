@@ -57,11 +57,11 @@ wp_enqueue_script('ghi');
           <a href="http://localhost:8888/petieEnvie_Ver2" class="brand">Petite Envie</a>
           <div class="nav-collapse collapse">
             <ul class="nav">
-              <li><a href="http://localhost:8888/petieEnvie_Ver2/about/">About</a></li>
-              <li><a href="http://localhost:8888/petieEnvie_Ver2/services">Catalogue</a></li>
+              <li id="c_about"><a href="http://localhost/forum2/home-3/">About</a></li>
+              <li id="c_catalogue"><a href="http://localhost/forum2/services-3/">Catalogue</a></li>
               <li><a href="http://localhost:8888/petieEnvie_Ver2/services">Gallery</a></li>
                 <li><a href="http://localhost:8888/petieEnvie_Ver2/services">Blog</a></li>
-              <li><a href="http://localhost:8888/petieEnvie_Ver2/contact/">Contact</a></li>
+              <li id="c_contact"><a href="http://localhost/forum2/contact-us-3/">Contact</a></li>
             </ul>
             <ul class="nav pull-right">
 				<li id="contactUs" class="dropdown">
@@ -103,3 +103,6 @@ wp_enqueue_script('ghi');
         </div>
       </div>
 </div>
+<header>
+	<h1></h1>
+</header>
