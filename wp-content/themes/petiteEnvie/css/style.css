@@ -16,7 +16,7 @@ nav .brand {
 @font-face {
 	font-family: 'maquette';
 	src: url('../fonts/ARSMaquettePro-Bold.eot');
-	src: local('‰÷¼'), url('../fonts/ARSMaquettePro-Bold.woff') format('woff'), url('../fonts/ARSMaquettePro-Bold.ttf') format('truetype'), url('../fonts/ARSMaquettePro-Bold.svg') format('svg');
+	src: local('ï¿½ï¿½ï¿½'), url('../fonts/ARSMaquettePro-Bold.woff') format('woff'), url('../fonts/ARSMaquettePro-Bold.ttf') format('truetype'), url('../fonts/ARSMaquettePro-Bold.svg') format('svg');
 	font-weight: normal;
 	font-style: normal;
 }
@@ -24,7 +24,7 @@ nav .brand {
 @font-face {
 	font-family: 'cardo';
 	src: url('../fonts/Cardo-Regular.eot');
-	src: local('‰÷¼'), url('../fonts/Cardo-Regular.woff') format('woff'), url('../fonts/Cardo-Regular.ttf') format('truetype'), url('../fonts/Cardo-Regular.svg') format('svg');
+	src: local('ï¿½ï¿½ï¿½'), url('../fonts/Cardo-Regular.woff') format('woff'), url('../fonts/Cardo-Regular.ttf') format('truetype'), url('../fonts/Cardo-Regular.svg') format('svg');
 	font-weight: normal;
 	font-style: normal;
 }
@@ -153,7 +153,7 @@ h1 {
 	background: url(../img/logo.png) no-repeat center center;
 	height: 80px;
 	text-indent: -9999em;
-	margin: 0;
+	margin: 5px 0px;
 }
 
 header span{
@@ -161,9 +161,9 @@ header span{
 	color:black;
 }
 header {
-	background: black;
+	background: rgb(246,245,239);
 	height: 80px;
-	z-index: 1;
+	z-index: 1;	
 }
 
 .headline-block {
@@ -327,7 +327,6 @@ nav ul.secondary li a {
 
 .contact .static-panel {
 	background: #cb7d7f !important;
-	color: white;
 }
 
 .contact header {
@@ -337,7 +336,8 @@ nav ul.secondary li a {
 
 
 .contact input[type=text],
-.contact input[type=email] {
+.contact input[type=email],
+.contact textarea {
 	text-align: center;
 	font-weight: bold;
 	font-family: 'maquette', sans-serif;
@@ -363,7 +363,7 @@ body.contact {
 }
 
 .contact a {
-	color: white;
+	/*color: white;*/
 }
 
 

@@ -17,9 +17,6 @@
 jQuery(document).ready(function($) {
 
 	$('.center').center(true);
-	$(".Oursecondary").hide();
-	$(".Oursecondary").show();
-	
 });
 
 
