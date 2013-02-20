@@ -45,7 +45,10 @@ wp_enqueue_script('ghi');
 </head>
 
 <body id="peBody">
-
+<!--
+<a href="#" id="next-panel">Next Panel</a>
+<a href="#" id="prev-panel">Prev Panel</a>
+-->
 <div class="navbar navbar-inverse navbar-fixed-top">
       <div id="primaryMenu" class="navbar-inner">
         <div class="container">
@@ -54,9 +57,9 @@ wp_enqueue_script('ghi');
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a href="http://localhost:8888/petieEnvie_Ver2" class="brand">Petite Envie</a>
+          <a href="http://localhost/forum2" class="brand">Petite Envie</a>
           <div class="nav-collapse collapse">
-            <ul class="nav">
+            <ul id="c_primary" class="nav">
               <li id="c_about"><a href="http://localhost/forum2/home-3/">About</a></li>
               <li id="c_catalogue"><a href="http://localhost/forum2/services-3/">Catalogue</a></li>
               <li><a href="http://localhost:8888/petieEnvie_Ver2/services">Gallery</a></li>
@@ -88,16 +91,14 @@ wp_enqueue_script('ghi');
       </div>
             <div class="navbar-inner Oursecondary">
               <div class="container">
-          <div class="nav-collapse collapse">
-            <ul class="nav">
-              <li><a href="#">TEA CAKES</a></li>
-              <li><a href="#about">LAYER CAKES</a></li>
-              <li><a href="#contact">CUPCAKES</a></li>
-              <li><a href="#contact">CHEESECAKES</a></li>
-              <li><a href="#contact">BROWNIES</a></li>
-              <li><a href="#contact">COOKIES</a></li>
-              <li><a href="#contact">MACARONS</a></li>
-				<li><a href="#contact">MUFFINS</a></li>
+          <div id = "divSecondary" class="nav-collapse collapse">
+            <ul id="c_secondary" class="nav">
+              <li><a href="#cake1" rel="cake1">TEA CAKES</a></li>
+              <li><a href="#cake2" rel="cake2">LAYER CAKES</a></li>
+              <li><a href="#cake3" rel="cake3">CUPCAKES</a></li>
+              <li><a href="#cake4" rel="cake4">CHEESECAKES</a></li>
+              <li><a href="#cup1" rel="cup1">BROWNIES</a></li>
+              <li><a href="#cup2" rel="cup2">COOKIES</a></li>
             </ul>            
           </div><!--/.nav-collapse -->
         </div>
