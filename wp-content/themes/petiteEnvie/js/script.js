@@ -1,4 +1,12 @@
+// Panel Resizing
 
+function resizingStuff() {
+	//alert('HELLO');
+	var navigationHeight = jQuery('.navbar').height();
+	var pageHeight = jQuery(window).height();
+	var panelHeight = pageHeight - navigationHeight;
+	jQuery('.panel').css('height', panelHeight);
+}
 
 // Element Centering
 (function($){
@@ -15,34 +23,30 @@
 
 // Fire it when the page loads
 jQuery(document).ready(function($) {
-
+	//alert('hi');
+	resizingStuff();
 	$('.center').center(true);
 });
 
 
 // Fire it on window resize
-window.onresize = function() {
+jQuery(window).resize(function($) {
+    resizingStuff();
+	jQuery('.center').center(true);
+});
 
-    $('.center').center(true);
-};
-
-
-
-
-
-
-
+/*
 
 // Jump bits
 function goToByScroll(id){
-    var navigationHeight = $('nav').height();
+    var navigationHeight = $('.navbar').height();
     $('html,body').animate({scrollTop: $("#"+id).offset().top - navigationHeight},'slow');
 		$('#page div').removeClass('current');//remove all current classes
 		$("#"+id).addClass('current');//update current slide with current class
 	
 }
 
-$("nav ul.secondary a").click(function(e) {
+$(".navbar ul.nav a").click(function(e) {
     e.preventDefault();
     goToByScroll($(this).attr("rel"));           
 });
@@ -59,8 +63,8 @@ $("nav ul.secondary a").click(function(e) {
 
 $(document).ready(function(){
 	
-var lastId, topMenu = $("#secondary-nav"),
-    topMenuHeight = topMenu.outerHeight() + 150,
+var lastId, topMenu = $("#c_secondary"),
+    topMenuHeight = topMenu.outerHeight() + 80,
     menuItems = topMenu.find("a"),
     scrollItems = menuItems.map(function() {
         var item = $($(this).attr("href"));
@@ -86,3 +90,4 @@ $(window).scroll(function() {
     }
 });
 });
+*/
