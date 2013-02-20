@@ -1,9 +1,9 @@
 (function() {
 $('#prev-panel').hide();
 
-var navigationHeight = $('nav').height();
+var navigationHeight = $('.navbar').height();
 var navItems =[];
-navItems=$('nav ul.primary li a').map(function() {
+navItems=$('#c_primary li a').map(function() {
   return $(this).attr('href');
 });
 //console.log(navItems);
