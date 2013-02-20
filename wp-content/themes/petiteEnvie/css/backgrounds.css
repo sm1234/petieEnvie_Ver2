@@ -36,23 +36,23 @@
 }
 
 .about .panel-4 {
-	background-image: url(/tt.php?src=/resources/img/backgrounds/about-4.jpg&w=1200);
+	background-image: url('../img/1.jpg');
 }
 
 .about .panel-5 {
-	background-image: url(/tt.php?src=/resources/img/backgrounds/about-5.jpg&w=1200);
+	background-image: url('../img/2.jpg');
 }
 
 .about .panel-6 {
-	background-image: url(/tt.php?src=/resources/img/backgrounds/about-6.jpg&w=1200);
+	background-image: url('../img/3.jpg');
 }
 
 .about .panel-7 {
-	background-image: url(/tt.php?src=/resources/img/backgrounds/about-7.jpg&w=1200);
+	background-image: url('../img/4.jpg');
 }
 
 .about .panel-8 {
-	background-image: url(/tt.php?src=/resources/img/backgrounds/about-8.jpg&w=1200);
+	background-image: url('../img/5.jpg');
 }
 
 
@@ -60,51 +60,51 @@
 /*services page*/
 
 .services .panel-1 {
-	background-image: url(/tt.php?src=/resources/img/backgrounds/services-1.jpg&w=1200);
+	background-image: url('../img/s1.jpg');
 }
 
 .services .panel-2 {
-	background-image: url(/tt.php?src=/resources/img/backgrounds/services-2.jpg&w=1200);
+	background-image: url('../img/s2.jpg');
 }
 
 .services .panel-3 {
-	background-image: url(/tt.php?src=/resources/img/backgrounds/services-3.jpg&w=1200);
+	background-image: url('../img/s3.jpg');
 }
 
 .services .panel-4 {
-	background-image: url(/tt.php?src=/resources/img/backgrounds/services-4.jpg&w=1200);
+	background-image: url('../img/s4.jpg');
 }
 
 .services .panel-5 {
-	background-image: url(/tt.php?src=/resources/img/backgrounds/services-5.jpg&w=1200);
+	background-image: url('../img/s5.jpg');
 }
 
 .services .panel-6 {
-	background-image: url(/tt.php?src=/resources/img/backgrounds/services-6.jpg&w=1200);
+	background-image: url('../img/s6.jpg');
 }
 
 .services .panel-7 {
-	background-image: url(/tt.php?src=/resources/img/backgrounds/services-7.jpg&w=1200);
+	background-image: url('../img/s7.jpg');
 }
 
 .services .panel-8 {
-	background-image: url(/tt.php?src=/resources/img/backgrounds/services-8.jpg&w=1200);
+	background-image: url('../img/s8.jpg');
 }
 
 .services .panel-9 {
-	background-image: url(/tt.php?src=/resources/img/backgrounds/services-9.jpg&w=1200);
+	background-image: url('../img/s9.jpg');
 }
 
 .services .panel-10 {
-	background-image: url(/tt.php?src=/resources/img/backgrounds/services-10.jpg&w=1200);
+	background-image: url('../img/s10.jpg');
 }
 
 .services .panel-11 {
-	background-image: url(/tt.php?src=/resources/img/backgrounds/services-11.jpg&w=1200);
+	background-image: url('../img/s11.jpg');
 }
 
 .services .panel-12 {
-	background-image: url(/tt.php?src=/resources/img/backgrounds/services-12.jpg&w=1200);
+	background-image: url('../img/s12.jpg');
 }
 
 .services .panel-13 {
