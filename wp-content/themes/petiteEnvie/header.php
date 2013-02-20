@@ -57,12 +57,18 @@ wp_enqueue_script('ghi');
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a href="http://localhost/forum2" class="brand">Petite Envie</a>
+          <a href="http://localhost:8888/petieEnvie_Ver2" class="brand">Petite Envie</a>
           <div class="nav-collapse collapse">
             <ul id="c_primary" class="nav">
+<<<<<<< HEAD
              <!-- <li id="c_about"><a href="http://localhost/forum2/home-3/">About</a></li> -->
               <li id="c_catalogue"><a href="http://localhost/forum2/services-3/">Catalogue</a></li>          
               <li id="c_contact"><a href="http://localhost/forum2/contact-us-3/">Contact</a></li>
+=======
+              <li id="c_about"><a href="http://localhost:8888/petieEnvie_Ver2/about/">About</a></li>
+              <li id="c_catalogue"><a href="http://localhost:8888/petieEnvie_Ver2/services/">Catalogue</a></li>
+              <li id="c_contact"><a href="http://localhost:8888/petieEnvie_Ver2/contact">Contact</a></li>
+>>>>>>> Removed unwanted links in header
             </ul>
             <ul class="nav pull-right">
 				<li id="contactUs" class="dropdown">
