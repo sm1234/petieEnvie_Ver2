@@ -45,10 +45,10 @@ wp_enqueue_script('ghi');
 </head>
 
 <body id="peBody">
-<!--
+
 <a href="#" id="next-panel">Next Panel</a>
 <a href="#" id="prev-panel">Prev Panel</a>
--->
+
 <div class="navbar navbar-inverse navbar-fixed-top">
       <div id="primaryMenu" class="navbar-inner">
         <div class="container">
@@ -60,10 +60,8 @@ wp_enqueue_script('ghi');
           <a href="http://localhost/forum2" class="brand">Petite Envie</a>
           <div class="nav-collapse collapse">
             <ul id="c_primary" class="nav">
-              <li id="c_about"><a href="http://localhost/forum2/home-3/">About</a></li>
-              <li id="c_catalogue"><a href="http://localhost/forum2/services-3/">Catalogue</a></li>
-              <li><a href="http://localhost:8888/petieEnvie_Ver2/services">Gallery</a></li>
-                <li><a href="http://localhost:8888/petieEnvie_Ver2/services">Blog</a></li>
+             <!-- <li id="c_about"><a href="http://localhost/forum2/home-3/">About</a></li> -->
+              <li id="c_catalogue"><a href="http://localhost/forum2/services-3/">Catalogue</a></li>          
               <li id="c_contact"><a href="http://localhost/forum2/contact-us-3/">Contact</a></li>
             </ul>
             <ul class="nav pull-right">

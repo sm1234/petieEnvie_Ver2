@@ -39,6 +39,8 @@ get_header();
 <script type="text/javascript">
 jQuery(document).ready(function($) {
 	$(".Oursecondary").hide();
+	$('#prev-panel').hide();
+	$('#next-panel').hide();
 	$("#peBody").removeClass();
 	$("#peBody").addClass("contact");
 	$("#peBody").css("padding-top","35px");	

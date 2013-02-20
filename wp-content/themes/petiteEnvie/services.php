@@ -6,9 +6,9 @@ get_header();
 ?>
 
 <div id="page">
-	<div id="cake1" style="height: 690px;" class="panel panel-1">
+	<div id="cake1" style="height: 690px;" class="panel panel-1 current">
 		<div style="position: absolute; margin: 0px; top: 400.6px; left: 15px;" class="headline-block first center panel-block">
-			<p>Serving inspired ideas, sumptuous cakes and memorable occasions</p>
+			<p>Serving inspired ideas, sumptuous cakes and memorable occasions 1</p>
 		</div>	
 	</div>
 
@@ -20,7 +20,7 @@ get_header();
 
 	<div id="cake2" style="height: 690px;" class="panel panel-3">
 		<div style="position: absolute; margin: 0px; top: 400.6px; left: 15px;" class="headline-block first center panel-block">
-			<p>Serving inspired ideas, sumptuous cakes and memorable occasions</p>
+			<p>Serving inspired ideas, sumptuous cakes and memorable occasions 2</p>
 		</div>		
 	</div>
 
@@ -30,7 +30,7 @@ get_header();
 	
 	<div id="cake3" style="height: 690px;" class="panel panel-5">
 		<div style="position: absolute; margin: 0px; top: 400.6px; left: 15px;" class="headline-block first center panel-block">
-			<p>Serving inspired ideas, sumptuous cakes and memorable occasions</p>
+			<p>Serving inspired ideas, sumptuous cakes and memorable occasions 3</p>
 		</div>		
 	</div>	
 	<div style="height: 700px;" class="panel panel-6">
@@ -38,7 +38,7 @@ get_header();
 	
 	<div id="cake4" style="height: 690px;" class="panel panel-7">
 		<div style="position: absolute; margin: 0px; top: 400.6px; left: 15px;" class="headline-block first center panel-block">
-			<p>Serving inspired ideas, sumptuous cakes and memorable occasions</p>
+			<p>Serving inspired ideas, sumptuous cakes and memorable occasions 4</p>
 		</div>		
 	</div>
 	<div style="height: 700px;" class="panel panel-8">
@@ -46,7 +46,7 @@ get_header();
 	
 	<div id="cup1" style="height: 690px;" class="panel panel-9">
 		<div style="position: absolute; margin: 0px; top: 400.6px; left: 15px;" class="headline-block first center panel-block">
-			<p>Serving inspired ideas, sumptuous cakes and memorable occasions</p>
+			<p>Serving inspired ideas, sumptuous cakes and memorable occasions 5</p>
 		</div>		
 	</div>
 	<div style="height: 700px;" class="panel panel-10">
@@ -54,7 +54,7 @@ get_header();
 	
 	<div id="cup2" style="height: 690px;" class="panel panel-11">
 		<div style="position: absolute; margin: 0px; top: 400.6px; left: 15px;" class="headline-block first center panel-block">
-			<p>Serving inspired ideas, sumptuous cakes and memorable occasions</p>
+			<p>Serving inspired ideas, sumptuous cakes and memorable occasions 6</p>
 		</div>		
 	</div>
 	<div style="height: 700px;" class="panel panel-12">
@@ -68,6 +68,7 @@ jQuery(document).ready(function($) {
 	$("#peBody").addClass("services");
 	$("#peBody").css("padding-top","75px");	
 	$("#c_catalogue").addClass("active");
+	//$('a[href="#cake1"]').trigger('click');
 });
 </script>
 <?php
