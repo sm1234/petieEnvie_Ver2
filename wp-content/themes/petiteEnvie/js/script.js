@@ -23,9 +23,15 @@ function resizingStuff() {
 
 // Fire it when the page loads
 jQuery(document).ready(function($) {
-	//alert('hi');
+	
 	resizingStuff();
 	$('.center').center(true);
+
+jQuery("#c_secondary a").click(function(e) {
+    e.preventDefault();
+    goToByScroll(jQuery(this).attr("rel"));           
+});
+
 });
 
 
@@ -35,21 +41,16 @@ jQuery(window).resize(function($) {
 	jQuery('.center').center(true);
 });
 
-/*
-
 // Jump bits
 function goToByScroll(id){
-    var navigationHeight = $('.navbar').height();
-    $('html,body').animate({scrollTop: $("#"+id).offset().top - navigationHeight},'slow');
-		$('#page div').removeClass('current');//remove all current classes
-		$("#"+id).addClass('current');//update current slide with current class
+    var navigationHeight = jQuery('.navbar').height();
+    jQuery('html,body').animate({scrollTop: jQuery("#"+id).offset().top - navigationHeight},'slow');
+		jQuery('#page div').removeClass('current');//remove all current classes
+		jQuery("#"+id).addClass('current');//update current slide with current class
 	
 }
 
-$(".navbar ul.nav a").click(function(e) {
-    e.preventDefault();
-    goToByScroll($(this).attr("rel"));           
-});
+
 
 
 
@@ -61,8 +62,7 @@ $(".navbar ul.nav a").click(function(e) {
 
 // Scrollspy Alternative
 
-$(document).ready(function(){
-	
+jQuery(document).ready(function($){
 var lastId, topMenu = $("#c_secondary"),
     topMenuHeight = topMenu.outerHeight() + 80,
     menuItems = topMenu.find("a"),
@@ -75,11 +75,11 @@ var lastId, topMenu = $("#c_secondary"),
 	
 
 
-$(window).scroll(function() {
-    var fromTop = $(this).scrollTop() + topMenuHeight;
+jQuery(window).scroll(function() {
+    var fromTop = jQuery(this).scrollTop() + topMenuHeight;
 
     var cur = scrollItems.map(function() {
-        if ($(this).offset().top < fromTop) return this;
+        if (jQuery(this).offset().top < fromTop) return this;
     });
     cur = cur[cur.length - 1];
     var id = cur && cur.length ? cur[0].id : "";
@@ -90,4 +90,3 @@ $(window).scroll(function() {
     }
 });
 });
-*/
