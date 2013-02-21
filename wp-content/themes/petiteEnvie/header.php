@@ -53,8 +53,8 @@
             <ul id="c_primary" class="nav" style="left: 30%;">
               <li id="c_about"><a href="http://localhost/forum2/home-3/">About</a></li>
               <li id="c_catalogue"><a href="http://localhost/forum2/services-3/">Catalogue</a></li>          
-              <li id="c_about"><a href="http://localhost/forum2/home-3/">Blog</a></li>
-              <li id="c_about"><a href="http://localhost/forum2/home-3/">Gallery</a></li>
+              <li id="c_blog"><a href="http://localhost/forum2/blog/">Blog</a></li>
+              <li id="c_gallery"><a href="http://localhost/forum2/gallery/">Gallery</a></li>
               <li id="c_contact"><a href="http://localhost/forum2/contact-us-3/">Contact</a></li>
             </ul>
             <ul class="nav pull-right">
