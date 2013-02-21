@@ -48,27 +48,14 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-<<<<<<< HEAD
-          <a href="http://localhost:8888/petieEnvie_Ver2" class="brand">Petite Envie</a>
-          <div class="nav-collapse collapse">
-            <ul id="c_primary" class="nav">
-<<<<<<< HEAD
-             <!-- <li id="c_about"><a href="http://localhost/forum2/home-3/">About</a></li> -->
-=======
           <a href="http://localhost/forum2" class="brand"><img src="<?php echo get_template_directory_uri().'/img/logo2.jpg'.$imgName ?>" /></a>
           <div class="nav-collapse collapse">
             <ul id="c_primary" class="nav" style="left: 30%;">
               <li id="c_about"><a href="http://localhost/forum2/home-3/">About</a></li>
->>>>>>> JS removed from header and moved to footer
               <li id="c_catalogue"><a href="http://localhost/forum2/services-3/">Catalogue</a></li>          
               <li id="c_about"><a href="http://localhost/forum2/home-3/">Blog</a></li>
               <li id="c_about"><a href="http://localhost/forum2/home-3/">Gallery</a></li>
               <li id="c_contact"><a href="http://localhost/forum2/contact-us-3/">Contact</a></li>
-=======
-              <li id="c_about"><a href="http://localhost:8888/petieEnvie_Ver2/about/">About</a></li>
-              <li id="c_catalogue"><a href="http://localhost:8888/petieEnvie_Ver2/services/">Catalogue</a></li>
-              <li id="c_contact"><a href="http://localhost:8888/petieEnvie_Ver2/contact">Contact</a></li>
->>>>>>> Removed unwanted links in header
             </ul>
             <ul class="nav pull-right">
 				<li id="contactUs" class="dropdown">
