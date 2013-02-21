@@ -61,6 +61,95 @@ scrollTo($current.next());
 ($current.index()==$('#page > div.panel').length - 2)? $('#next-panel').hide():$('#next-panel').show(); 
 }//slideDown
 
+var pressedCount =0;
+$(document).bind('keydown',function(event) {
+var $current = $('#page > .current');
+	
+ if (event.which == 40) {
+     event.preventDefault();
+if(pressedCount ==0 && $current.index()<=($('#page > div.panel').length - 2)){
+		 slideDown();
+	 }
+   }
+   
+    if (event.which == 38) {
+	   event.preventDefault();	
+		 if(pressedCount ==0 && $current.index()>=0){
+		slideUp();
+	 }
+  
+   }
+   
+       if (event.which == 37) {
+	   event.preventDefault();	
+		 if(pressedCount ==0 ){
+		pageLeft();
+	 }
+  
+   }
+   
+       if (event.which == 39) {
+	   event.preventDefault();	
+		 if(pressedCount ==0 ){
+		pageRight();
+	 }
+  
+   }
+   
+   
+  /* var msg = 'Handler for .keydown() called ';
+  console.log(msg, 'html');
+  console.log(event);*/
+ pressedCount++;
+});
+
+function pageLeft(){  
+var $currentPage = $('ul#c_primary > li.active');
+
+if($currentPage.index()>0){
+
+location.href=navItems[$currentPage.index()-1];
+}
+}//pageLeft
+
+
+function pageRight(){
+	var $currentPage = $('#c_primary > li.active');
+	
+if($currentPage.index()<navItems.length-1){
+
+location.href=navItems[$currentPage.index()+1];
+}
+}//pageRight
+
+$(document).bind('keyup',function(event) {
+
+ if (event.which == 40) {
+	 pressedCount =0;
+     event.preventDefault();
+   }
+   
+    if (event.which == 38) {
+		pressedCount =0;
+     event.preventDefault();
+   }
+  /* var msg = 'Handler for .keydown() called ';
+  console.log(msg, 'html');
+  console.log(event);*/
+  
+
+  
+     if (event.which == 37) {
+		pressedCount =0;
+     event.preventDefault();
+   }
+     if (event.which == 39) {
+		pressedCount =0;
+     event.preventDefault();
+   }
+
+});
+
 });
 
 /*
