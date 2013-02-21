@@ -43,7 +43,8 @@ jQuery(document).ready(function($) {
 	$('#next-panel').hide();
 	$("#peBody").removeClass();
 	$("#peBody").addClass("contact");
-	$("#peBody").css("padding-top","35px");	
+	var navigationHeight = jQuery('.navbar').height();
+	jQuery('body').css('padding-top', navigationHeight);	
 	$("#c_contact").addClass("active");
 	
 });

@@ -9,7 +9,8 @@ get_header();
 <script type="text/javascript">
 jQuery(document).ready(function($) {
 	$(".Oursecondary").hide();
-	$("#peBody").css("padding-top","35px");
+	var navigationHeight = jQuery('.navbar').height();
+	jQuery('body').css('padding-top', navigationHeight);
 	$("#c_about").addClass("active");
 });
 </script>

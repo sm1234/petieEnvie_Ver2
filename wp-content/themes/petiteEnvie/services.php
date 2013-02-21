@@ -66,7 +66,8 @@ jQuery(document).ready(function($) {
 	$("#c_secondary").hide().delay("300").slideDown(400);
 	$("#peBody").removeClass();
 	$("#peBody").addClass("services");
-	$("#peBody").css("padding-top","75px");	
+	var navigationHeight = jQuery('.navbar').height();
+	jQuery('body').css('padding-top', navigationHeight);	
 	$("#c_catalogue").addClass("active");
 	//$('a[href="#cake1"]').trigger('click');
 });

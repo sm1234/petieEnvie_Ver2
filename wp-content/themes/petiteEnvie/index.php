@@ -47,7 +47,8 @@ jQuery(document).ready(function($) {
 	$(".Oursecondary").hide();
 	$("#peBody").removeClass();
 	$("#peBody").addClass("about");
-	$("#peBody").css('padding-top','35px');	
+	var navigationHeight = jQuery('.navbar').height();
+	jQuery('body').css('padding-top', navigationHeight);	
 });
 </script>
 <?php get_footer(); ?>
