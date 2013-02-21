@@ -28,15 +28,6 @@
 <link media="screen" rel="stylesheet" href="<?php bloginfo('template_directory')?>/css/bootstrap-responsive.css">
 <link media="screen" rel="stylesheet" href="<?php bloginfo('template_directory')?>/css/style.css">
 <link media="screen" rel="stylesheet" href="<?php bloginfo('template_directory')?>/css/backgrounds.css">
-<?php
-wp_enqueue_script("jquery");
-wp_register_script('abc', get_template_directory_uri().'/js/bootstrap.js',array('jquery'));
-wp_register_script('def', get_template_directory_uri().'/js/extra.js',array('jquery'));
-wp_register_script('ghi', get_template_directory_uri().'/js/script.js',array('jquery'));
-wp_enqueue_script('abc');
-wp_enqueue_script('def');
-wp_enqueue_script('ghi');
-?>
 <?php // Loads HTML5 JavaScript file to add support for HTML5 elements in older IE versions. ?>
 <!--[if lt IE 9]>
 <script src="<?php echo get_template_directory_uri(); ?>/js/html5.js" type="text/javascript"></script>
@@ -50,19 +41,28 @@ wp_enqueue_script('ghi');
 <a href="#" id="prev-panel">Prev Panel</a>
 
 <div class="navbar navbar-inverse navbar-fixed-top">
-      <div id="primaryMenu" class="navbar-inner">
+      <div id="primaryMenu" class="navbar-inner" style="background-color: rgb(0, 0, 0);">
         <div class="container">
           <button data-target=".nav-collapse" data-toggle="collapse" class="btn btn-navbar" type="button">
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
+<<<<<<< HEAD
           <a href="http://localhost:8888/petieEnvie_Ver2" class="brand">Petite Envie</a>
           <div class="nav-collapse collapse">
             <ul id="c_primary" class="nav">
 <<<<<<< HEAD
              <!-- <li id="c_about"><a href="http://localhost/forum2/home-3/">About</a></li> -->
+=======
+          <a href="http://localhost/forum2" class="brand"><img src="<?php echo get_template_directory_uri().'/img/logo2.jpg'.$imgName ?>" /></a>
+          <div class="nav-collapse collapse">
+            <ul id="c_primary" class="nav" style="left: 30%;">
+              <li id="c_about"><a href="http://localhost/forum2/home-3/">About</a></li>
+>>>>>>> JS removed from header and moved to footer
               <li id="c_catalogue"><a href="http://localhost/forum2/services-3/">Catalogue</a></li>          
+              <li id="c_about"><a href="http://localhost/forum2/home-3/">Blog</a></li>
+              <li id="c_about"><a href="http://localhost/forum2/home-3/">Gallery</a></li>
               <li id="c_contact"><a href="http://localhost/forum2/contact-us-3/">Contact</a></li>
 =======
               <li id="c_about"><a href="http://localhost:8888/petieEnvie_Ver2/about/">About</a></li>
@@ -93,16 +93,18 @@ wp_enqueue_script('ghi');
           </div><!--/.nav-collapse -->
         </div>
       </div>
-            <div class="navbar-inner Oursecondary">
+            <div class="navbar-inner Oursecondary" style="font-size: 13px;">
               <div class="container">
           <div id = "divSecondary" class="nav-collapse collapse">
-            <ul id="c_secondary" class="nav">
-              <li><a href="#cake1" rel="cake1">TEA CAKES</a></li>
-              <li><a href="#cake2" rel="cake2">LAYER CAKES</a></li>
-              <li><a href="#cake3" rel="cake3">CUPCAKES</a></li>
-              <li><a href="#cake4" rel="cake4">CHEESECAKES</a></li>
-              <li><a href="#cup1" rel="cup1">BROWNIES</a></li>
-              <li><a href="#cup2" rel="cup2">COOKIES</a></li>
+            <ul id="c_secondary" class="nav" style="display: block; left: 19%;">
+              <li><a href="#cake1" rel="cake1">Tea Cakes</a></li>
+              <li><a href="#cake2" rel="cake2">Layer Cakes</a></li>
+              <li><a href="#cake3" rel="cake3">Cheesecakes</a></li>
+              <li><a href="#cake4" rel="cake4">Brownies</a></li>
+              <li><a href="#cup1" rel="cup1">Cookies</a></li>
+              <li><a href="#cup2" rel="cup2">Whoopie Pies</a></li>
+              <li><a href="#cup2" rel="cup2">Cupcakes</a></li>
+              <li><a href="#cup2" rel="cup2">Gifts</a></li>
             </ul>            
           </div><!--/.nav-collapse -->
         </div>
