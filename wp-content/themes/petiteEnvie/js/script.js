@@ -1,11 +1,21 @@
 // Panel Resizing
 
 function resizingStuff() {
-	//alert('HELLO');
+	var navigationWidth = jQuery('#peBody').width();	
 	var navigationHeight = jQuery('.navbar').height();
+	if(navigationWidth>963)
+	{
+	jQuery('#c_primary').css('left', '30%');
 	var pageHeight = jQuery(window).height();
 	var panelHeight = pageHeight - navigationHeight;
 	jQuery('.panel').css('height', panelHeight);
+	}
+	else
+	{
+	jQuery('#c_primary').css('left', '0%');
+	var pageHeight = jQuery(window).height();
+	jQuery('.panel').css('height', pageHeight);
+	}
 }
 
 // Element Centering
@@ -22,8 +32,7 @@ function resizingStuff() {
 })(jQuery);
 
 // Fire it when the page loads
-jQuery(document).ready(function($) {
-	
+jQuery(document).ready(function($) {	
 	resizingStuff();
 	$('.center').center(true);
 
@@ -43,11 +52,14 @@ jQuery(window).resize(function($) {
 
 // Jump bits
 function goToByScroll(id){
+	var navigationWidth = jQuery('#peBody').width();
+	if(navigationWidth>963)
+	{
     var navigationHeight = jQuery('.navbar').height();
     jQuery('html,body').animate({scrollTop: jQuery("#"+id).offset().top - navigationHeight},'slow');
 		jQuery('#page div').removeClass('current');//remove all current classes
 		jQuery("#"+id).addClass('current');//update current slide with current class
-	
+	}
 }
 
 
@@ -64,7 +76,7 @@ function goToByScroll(id){
 
 jQuery(document).ready(function($){
 var lastId, topMenu = $("#c_secondary"),
-    topMenuHeight = topMenu.outerHeight() + 80,
+    topMenuHeight = topMenu.outerHeight() + 150,
     menuItems = topMenu.find("a"),
     scrollItems = menuItems.map(function() {
         var item = $($(this).attr("href"));

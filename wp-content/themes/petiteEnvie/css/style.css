@@ -5,7 +5,7 @@
 }
 .Oursecondary
 {
-	background-image:linear-gradient(to bottom, rgb(68,68,68),rgb(68,68,68)) !important;
+	background-image:linear-gradient(to bottom, rgb(38,38,38),rgb(38,38,38)) !important;
 	text-align:center !important;
 }
 nav .brand {
@@ -150,10 +150,10 @@ nav ul li a:focus {
 }
 
 h1 {
-	background: url(../img/logo.png) no-repeat center center;
-	height: 80px;
+	background: url(../img/logo_pink.jpg) no-repeat center center;
+	height: 145px;
 	text-indent: -9999em;
-	margin: 5px 0px;
+	margin: 0px 0px;
 }
 
 header span{
@@ -161,8 +161,8 @@ header span{
 	color:black;
 }
 header {
-	background: rgb(246,245,239);
-	height: 80px;
+	background: rgb(208,127,124);
+	height: 150px;
 	z-index: 1;	
 }
 

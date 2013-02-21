@@ -1,6 +1,7 @@
 jQuery(document).ready(function($) {
-$('#prev-panel').hide();	
+$('#prev-panel').hide();
 
+var navigationWidth = jQuery('#peBody').width();
 var navigationHeight = $('.navbar').height();
 var navItems =[];
 
@@ -19,9 +20,19 @@ slideDown();
 });//end slide-down
 
 var scrollTo = function(element) {
+	if(navigationWidth>963)
+	{		
         $('html, body').animate({
             scrollTop: element.offset().top - navigationHeight
         }, 500);
+    }
+    else
+    {
+    	alert('Here');
+    	$('html, body').animate({
+            scrollTop: element.offset().top
+        }, 500);
+    }
 }
 
 function slideUp(){	
@@ -41,7 +52,6 @@ function slideDown(){
 var $current = $('#page > .current');
 $current.removeClass('current').next().addClass('current');
 scrollTo($current.next());
-
 if ($current.index() != $('#page > div.panel').length - 1) {
 $current.removeClass('current').next().addClass('current');
 scrolling=true;
@@ -51,7 +61,36 @@ scrollTo($current.next());
 ($current.index()==$('#page > div.panel').length - 2)? $('#next-panel').hide():$('#next-panel').show(); 
 }//slideDown
 
-
-
 });
 
+/*
+jQuery(window).resize(function($) {
+var navigationWidth = jQuery('#peBody').width();
+jQuery('#prev-panel').click(function(event) {
+event.preventDefault();
+slideUp();
+});//end slide up
+
+jQuery('#next-panel').click(function(event) {
+alert('Yo');
+event.preventDefault();
+slideDown();	
+});//end slide-down
+
+var scrollTo = function(element) {
+	if(navigationWidth>963)
+	{		
+        jQuery('html, body').animate({
+            scrollTop: element.offset().top - navigationHeight
+        }, 500);
+    }
+    else
+    {
+    	alert('Here');
+    	jQuery('html, body').animate({
+            scrollTop: element.offset().top
+        }, 500);
+    }
+}
+});
+*/
