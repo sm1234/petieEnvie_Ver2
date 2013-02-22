@@ -28,7 +28,6 @@ var scrollTo = function(element) {
     }
     else
     {
-    	alert('Here');
     	$('html, body').animate({
             scrollTop: element.offset().top
         }, 500);

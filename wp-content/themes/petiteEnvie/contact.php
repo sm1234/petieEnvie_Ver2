@@ -11,7 +11,7 @@ get_header();
 
 					<p><span class="name">-<br>Contact<br>-</span></p>
 					<p>Address Goes Here</p>
-					<p class="maquette">Tel: 0151 638 0011<br>Email <a href="mailto:queries@petiteenvie.com">queries@petiteenvie.com</a></p>
+					<p class="maquette">Tel: XX XXXX XXXX<br>Email <a href="mailto:queries@petiteenvie.com">queries@petiteenvie.com</a></p>
 										
 					
 <?php

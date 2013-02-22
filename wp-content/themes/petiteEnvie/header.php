@@ -48,13 +48,13 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a href="http://localhost/forum2" class="brand"><img src="<?php echo get_template_directory_uri().'/img/logo2.jpg'.$imgName ?>" /></a>
+          <a href="http://localhost/forum2" class="brand"><img src="<?php echo get_template_directory_uri().'/img/logo2.jpg' ?>" /></a>
           <div class="nav-collapse collapse">
-            <ul id="c_primary" class="nav" style="left: 30%;">
-              <li id="c_about"><a href="http://localhost/forum2/home-3/">About</a></li>
+            <ul id="c_primary" class="nav" style="left: 35%;">
+            <!--  <li id="c_about"><a href="http://localhost/forum2/home-3/">About</a></li> -->
               <li id="c_catalogue"><a href="http://localhost/forum2/services-3/">Catalogue</a></li>          
-              <li id="c_blog"><a href="http://localhost/forum2/blog/">Blog</a></li>
-              <li id="c_gallery"><a href="http://localhost/forum2/gallery/">Gallery</a></li>
+             <!-- <li id="c_blog"><a href="http://localhost/forum2/blog/">Blog</a></li>
+              <li id="c_gallery"><a href="http://localhost/forum2/gallery/">Gallery</a></li> -->
               <li id="c_contact"><a href="http://localhost/forum2/contact-us-3/">Contact</a></li>
             </ul>
             <ul class="nav pull-right">
@@ -83,15 +83,15 @@
             <div class="navbar-inner Oursecondary" style="font-size: 13px;">
               <div class="container">
           <div id = "divSecondary" class="nav-collapse collapse">
-            <ul id="c_secondary" class="nav" style="display: block; left: 19%;">
+            <ul id="c_secondary" class="nav" style="display: block; left: 25%;">
               <li><a href="#cake1" rel="cake1">Tea Cakes</a></li>
               <li><a href="#cake2" rel="cake2">Layer Cakes</a></li>
               <li><a href="#cake3" rel="cake3">Cheesecakes</a></li>
               <li><a href="#cake4" rel="cake4">Brownies</a></li>
               <li><a href="#cup1" rel="cup1">Cookies</a></li>
               <li><a href="#cup2" rel="cup2">Whoopie Pies</a></li>
-              <li><a href="#cup2" rel="cup2">Cupcakes</a></li>
-              <li><a href="#cup2" rel="cup2">Gifts</a></li>
+             <!-- <li><a href="#cup3" rel="cup3">Cupcakes</a></li>
+              <li><a href="#cup4" rel="cup4">Gifts</a></li> -->
             </ul>            
           </div><!--/.nav-collapse -->
         </div>

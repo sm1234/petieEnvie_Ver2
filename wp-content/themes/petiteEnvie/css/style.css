@@ -5,7 +5,8 @@
 }
 .Oursecondary
 {
-	background-image:linear-gradient(to bottom, rgb(38,38,38),rgb(38,38,38)) !important;
+	/*background-image:linear-gradient(to bottom, rgb(38,38,38),rgb(38,38,38)) !important;*/
+	background-color: rgb(38,38,38);
 	text-align:center !important;
 }
 nav .brand {
@@ -326,7 +327,7 @@ nav ul.secondary li a {
 }
 
 .contact .static-panel {
-	background: #cb7d7f !important;
+	background: rgb(208,127,124) !important;
 }
 
 .contact header {
@@ -359,7 +360,7 @@ nav ul.secondary li a {
 }
 
 body.contact {
-	background-color: rgb(203,125,127);
+	background-color: rgb(208,127,124);
 }
 
 .contact a {

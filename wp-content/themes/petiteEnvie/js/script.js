@@ -5,7 +5,7 @@ function resizingStuff() {
 	var navigationHeight = jQuery('.navbar').height();
 	if(navigationWidth>963)
 	{
-	jQuery('#c_primary').css('left', '30%');
+	jQuery('#c_primary').css('left', '35%');
 	var pageHeight = jQuery(window).height();
 	var panelHeight = pageHeight - navigationHeight;
 	jQuery('.panel').css('height', panelHeight);
@@ -31,10 +31,23 @@ function resizingStuff() {
     }); 
 })(jQuery);
 
+(function($){
+    $.fn.extend({
+        center1: function () {
+            return this.each(function() {
+                var top = ($(window).height() - $(this).outerHeight()) / 2.5 ;
+                var left = ($(window).width() - $(this).outerWidth());
+                $(this).css({position:'absolute', margin:0, top: (top > 0 ? top : 0)+'px', left: (left > 0 ? left : 0)+'px'});                             
+            });
+        }
+    }); 
+})(jQuery);
+
 // Fire it when the page loads
 jQuery(document).ready(function($) {	
 	resizingStuff();
 	$('.center').center(true);
+	$('.center1').center1(true);
 
 jQuery("#c_secondary a").click(function(e) {
     e.preventDefault();
@@ -46,8 +59,20 @@ jQuery("#c_secondary a").click(function(e) {
 
 // Fire it on window resize
 jQuery(window).resize(function($) {
+	var navigationWidth = jQuery('#peBody').width();
     resizingStuff();
 	jQuery('.center').center(true);
+	if(navigationWidth>963)
+	{
+	//jQuery(".services .panel-2").css("background-image","url('C:\wamp\www\forum2\wp-content\themes\petiteEnvie\img\s2.jpg')");
+	jQuery('.center1').center1(true);
+	}
+	else
+	{
+	
+	jQuery('.center1').center(true);
+	//jQuery(".services .panel-2").css("background-image","url('C:\wamp\www\forum2\wp-content\themes\petiteEnvie\img\cake1.jpg')");
+	}
 });
 
 // Jump bits
