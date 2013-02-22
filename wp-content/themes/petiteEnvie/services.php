@@ -33,13 +33,13 @@ get_header();
 		</div>
 	</div>
 	
-	<div id="cup1" style="height: 690px;" class="panel panel-5">
+	<div id="cake5" style="height: 690px;" class="panel panel-5">
 		<div style="position: absolute; margin: 0px; top: 100.6px; left: 605px;" class="headline-block first center1 panel-block">
 			<p>Home-made cookies with fresh, traditional ingredients always beat the flavor of the store bought variety! These are perfect as personal treats and also make elegant gifts.</p>
 		</div>		
 	</div>	
 	
-	<div id="cup2" style="height: 700px;" class="panel panel-6">
+	<div id="cake6" style="height: 700px;" class="panel panel-6">
 		<div style="position: absolute; margin: 0px; top: 100.6px; left: 605px;" class="headline-block first center1 panel-block">
 			<p>A delicate French Cookie. An almond based meringue that is crisp and moist at the same time.</p>
 		</div>

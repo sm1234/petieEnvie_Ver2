@@ -53,7 +53,7 @@ jQuery(document).ready(function($) {
 	$("#peBody").addClass("services");
 	var navigationHeight = jQuery('.navbar').height();
 	jQuery('body').css('padding-top', navigationHeight);	
-	$("#c_catalogue").addClass("active");
+	//$("#c_catalogue").addClass("active");
 	//$('a[href="#cake1"]').trigger('click');
 });
 </script>

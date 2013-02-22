@@ -5,13 +5,17 @@ function resizingStuff() {
 	var navigationHeight = jQuery('.navbar').height();
 	if(navigationWidth>963)
 	{
-	jQuery('#c_primary').css('left', '35%');
+	jQuery('.center1').show();
+	jQuery('.center1').center1(true);
+	jQuery('#c_primary').css('left', '28%');
 	var pageHeight = jQuery(window).height();
 	var panelHeight = pageHeight - navigationHeight;
 	jQuery('.panel').css('height', panelHeight);
 	}
 	else
 	{
+	jQuery('.center1').hide();
+	jQuery('.center1').center(true);
 	jQuery('#c_primary').css('left', '0%');
 	var pageHeight = jQuery(window).height();
 	jQuery('.panel').css('height', pageHeight);
@@ -45,14 +49,16 @@ function resizingStuff() {
 
 // Fire it when the page loads
 jQuery(document).ready(function($) {	
-	resizingStuff();
-	$('.center').center(true);
-	$('.center1').center1(true);
 
+	resizingStuff();
+
+	//$('.center').center(true);
+	//$('.center1').center1(true);
 jQuery("#c_secondary a").click(function(e) {
     e.preventDefault();
     goToByScroll(jQuery(this).attr("rel"));           
 });
+
 
 });
 
@@ -61,25 +67,23 @@ jQuery("#c_secondary a").click(function(e) {
 jQuery(window).resize(function($) {
 	var navigationWidth = jQuery('#peBody').width();
     resizingStuff();
-	jQuery('.center').center(true);
-	if(navigationWidth>963)
-	{
-	//jQuery(".services .panel-2").css("background-image","url('C:\wamp\www\forum2\wp-content\themes\petiteEnvie\img\s2.jpg')");
-	jQuery('.center1').center1(true);
-	}
-	else
-	{
-	
-	jQuery('.center1').center(true);
-	//jQuery(".services .panel-2").css("background-image","url('C:\wamp\www\forum2\wp-content\themes\petiteEnvie\img\cake1.jpg')");
-	}
+//	if(navigationWidth<963)
+//	{
+	//jQuery('#page').find('div[id^="cake"]').each(function(index){jQuery(this).find('p').html(jQuery("a[rel='"+jQuery(this).attr('id')+"']").html())});
+	//var abc=jQuery('a[href="#cake2"]').html();
+	//jQuery('#cake2').children('.center1').children('p').html(abc);
+	//jQuery('#page').find('div[id^="cake"]').each(function( index ) {$(this).html());
+//});
+//	}
 });
 
 // Jump bits
 function goToByScroll(id){
+	
 	var navigationWidth = jQuery('#peBody').width();
 	if(navigationWidth>963)
 	{
+		
     var navigationHeight = jQuery('.navbar').height();
     jQuery('html,body').animate({scrollTop: jQuery("#"+id).offset().top - navigationHeight},'slow');
 		jQuery('#page div').removeClass('current');//remove all current classes
@@ -107,10 +111,9 @@ var lastId, topMenu = $("#c_secondary"),
         var item = $($(this).attr("href"));
         if (item.length) {
             return item;
-        }
+        }  
     });
 	
-
 
 jQuery(window).scroll(function() {
     var fromTop = jQuery(this).scrollTop() + topMenuHeight;
