@@ -1,5 +1,6 @@
 // Panel Resizing
 
+
 function resizingStuff() {
 	var navigationWidth = jQuery('#peBody').width();	
 	var navigationHeight = jQuery('.navbar').height();
@@ -54,9 +55,13 @@ jQuery(document).ready(function($) {
 
 	//$('.center').center(true);
 	//$('.center1').center1(true);
-jQuery("#c_secondary a").click(function(e) {
-    e.preventDefault();
-    goToByScroll(jQuery(this).attr("rel"));           
+
+
+jQuery("#c_secondary a").click(function() {
+	//jQuery('#c_secondary li').removeClass('active');
+//alert(active_link);	
+    /*e.preventDefault();
+    goToByScroll(jQuery(this).attr("rel"));*/             
 });
 
 
@@ -75,7 +80,7 @@ jQuery(window).resize(function($) {
 	//jQuery('#page').find('div[id^="cake"]').each(function( index ) {$(this).html());
 //});
 //	}
-});
+});/*
 
 // Jump bits
 function goToByScroll(id){
@@ -91,18 +96,10 @@ function goToByScroll(id){
 	}
 }
 
-
-
-
-
-
-
-
-
-
+*/
 
 // Scrollspy Alternative
-
+/*
 jQuery(document).ready(function($){
 var lastId, topMenu = $("#c_secondary"),
     topMenuHeight = topMenu.outerHeight() + 150,
@@ -129,4 +126,6 @@ jQuery(window).scroll(function() {
         menuItems.parent().removeClass("active").end().filter("[href=#" + id + "]").parent().addClass("active");
     }
 });
+
 });
+*/

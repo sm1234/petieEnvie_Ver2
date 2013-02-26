@@ -4,8 +4,13 @@ $('#prev-panel').hide();
 var navigationWidth = jQuery('#peBody').width();
 var navigationHeight = $('.navbar').height();
 var navItems =[];
+var navItems2 =[];
 
 navItems=$('#c_primary a').map(function() {
+  return $(this).attr('href');
+});
+
+navItems2=$('#c_secondary a').map(function() {
   return $(this).attr('href');
 });
 
@@ -47,7 +52,9 @@ scrollTo($current.prev());
 }//slideUp
 
 function slideDown(){
-
+var $current2 = $('#c_secondary > .active');
+if($current2.length>0)
+{
 var $current = $('#page > .current');
 $current.removeClass('current').next().addClass('current');
 scrollTo($current.next());
@@ -57,13 +64,18 @@ scrolling=true;
 scrollTo($current.next());
 }
 ($current.index()>=0)? $('#prev-panel').show():$('#prev-panel').hide();  	
-($current.index()==$('#page > div.panel').length - 2)? $('#next-panel').hide():$('#next-panel').show(); 
+($current.index()==$('#page > div.panel').length - 2)? $('#next-panel').hide():$('#next-panel').show();
+}
+else
+{
+$("a[rel=tea-cakes]").parent().addClass("active");
+} 
 }//slideDown
 
 var pressedCount =0;
 $(document).bind('keydown',function(event) {
 var $current = $('#page > .current');
-	
+var $current2 = $('#c_secondary > .active');
  if (event.which == 40) {
      event.preventDefault();
 if(pressedCount ==0 && $current.index()<=($('#page > div.panel').length - 2)){
@@ -103,21 +115,47 @@ if(pressedCount ==0 && $current.index()<=($('#page > div.panel').length - 2)){
 });
 
 function pageLeft(){  
+var $current2 = $('#c_secondary > .active');
+if($current2.length==0)
+{
 var $currentPage = $('ul#c_primary > li.active');
 
 if($currentPage.index()>0){
 
 location.href=navItems[$currentPage.index()-1];
 }
+}
+else
+{
+var $currentPage2 = $('#c_secondary > li.active');
+
+if($currentPage2.index()>0){
+
+location.href=navItems2[$currentPage2.index()-1];
+}
+}
 }//pageLeft
 
 
 function pageRight(){
-	var $currentPage = $('#c_primary > li.active');
+var $current2 = $('#c_secondary > .active');
+if($current2.length==0)
+{
+var $currentPage = $('#c_primary > li.active');
 	
 if($currentPage.index()<navItems.length-1){
 
 location.href=navItems[$currentPage.index()+1];
+}
+}
+else
+{
+var $currentPage2 = $('#c_secondary > li.active');
+
+if($currentPage2.index()<navItems2.length-1){
+
+location.href=navItems2[$currentPage2.index()+1];
+}
 }
 }//pageRight
 

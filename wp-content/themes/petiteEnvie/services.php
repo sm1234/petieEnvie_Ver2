@@ -7,13 +7,16 @@ get_header();
 
 <div id="page">
 	<div id="cake1" style="height: 690px;" class="panel panel-1 current">
+		<header>
+		<h1></h1>
+		</header>
 		<div style="position: absolute; margin: 0px; top: 100.6px; left: 605px;" class="headline-block first center1 panel-block">
 			<p>Traditionally enjoyed at tea time, these classic recipes also make charming gifts for special occasions and festivals.</p>
 		</div>	
 	</div>
 
 	
-	<div id="cake2" style="height: 690px;" class="panel panel-2 current">
+	<div id="cake2" style="height: 690px;" class="panel panel-2">
 		<div style="position: absolute; margin: 0px; top: 100.6px; left: 605px;" class="headline-block first center1 panel-block">
 			<p>Celebration cakes for very special occasions</p>
 		</div>
@@ -54,7 +57,8 @@ jQuery(document).ready(function($) {
 	var navigationHeight = jQuery('.navbar').height();
 	jQuery('body').css('padding-top', navigationHeight);	
 	$("#c_catalogue").addClass("active");
-	//$('a[href="#cake1"]').trigger('click');
+	var acticeElement = window.location.href.split('/')[4];
+	$("a[rel="+acticeElement+"]").parent().addClass("active");
 });
 </script>
 <?php
