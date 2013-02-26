@@ -4,6 +4,9 @@ Template Name: Contact
 */
 get_header();
 ?>
+<header>
+<h1></h1>
+</header>
 <div class="static-panel">
 	<div class="container">
 		<div class="row-fluid">

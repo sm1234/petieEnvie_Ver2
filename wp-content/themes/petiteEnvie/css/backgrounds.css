@@ -1,3 +1,9 @@
+#primaryMenu {
+	background-position: 0px 0px;
+	background-image: url('../img/p_bg.png');
+	background-repeat: repeat-x;
+}
+
 .panel {
 	color: white;
 	margin: 0 auto;

@@ -4,7 +4,9 @@ Template Name: Gallery
 */
 get_header();
 ?>
-
+<header>
+<h1></h1>
+</header>
 
 <script type="text/javascript">
 jQuery(document).ready(function($) {

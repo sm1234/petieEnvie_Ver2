@@ -1,6 +1,6 @@
 <?php
 /*
- Plugin Name: EM_CustomNewsLetter_Subscription
+ Plugin Name: PE_CustomNewsLetter_Subscription
  */
 ?>
 <?php  

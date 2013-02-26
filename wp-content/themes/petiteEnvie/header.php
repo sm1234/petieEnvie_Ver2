@@ -41,14 +41,14 @@
 <a href="#" id="prev-panel">Prev Panel</a>
 
 <div class="navbar navbar-inverse navbar-fixed-top">
-      <div id="primaryMenu" class="navbar-inner" style="background-color: rgb(0, 0, 0);">
+      <div id="primaryMenu" class="navbar-inner">
         <div class="container">
           <button data-target=".nav-collapse" data-toggle="collapse" class="btn btn-navbar" type="button">
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a href="http://localhost/forum2" class="brand"><img src="<?php echo get_template_directory_uri().'/img/logo2.jpg' ?>" /></a>
+          <a href="http://localhost/forum2" class="brand" style="margin-left:20px;"><img src="<?php echo get_template_directory_uri().'/img/logo2.jpg' ?>"/></a>
           <div class="nav-collapse collapse">
             <ul id="c_primary" class="nav" style="left: 28%;">
               <li id="c_about"><a href="http://localhost/forum2/home-3/">About</a></li>
@@ -57,9 +57,9 @@
               <li id="c_gallery"><a href="http://localhost/forum2/gallery/">Gallery</a></li>
               <li id="c_contact"><a href="http://localhost/forum2/contact-us-3/">Contact</a></li>
             </ul>
-            <ul class="nav pull-right">
+            <ul class="nav pull-right" style="margin-right:20px;">
 				<li id="contactUs" class="dropdown">
-                      <a href="#" id="contactUs" role="button" class="dropdown-toggle" data-toggle="dropdown">Follow Us<b class="caret"></b></a>
+                      <a href="#" id="contactUs" role="button" class="dropdown-toggle" data-toggle="dropdown" style="padding: 7px 3px 8px;">Follow Us<b class="caret"></b></a>
                       <div class="dropdown-menu" role="menu" aria-labelledby="contactUs">
 						<table style="width:300px;">
 						<tbody><tr>
@@ -80,23 +80,21 @@
           </div><!--/.nav-collapse -->
         </div>
       </div>
-            <div class="navbar-inner Oursecondary" style="font-size: 13px;">
-              <div class="container">
+            <div class="navbar-inner Oursecondary" style="font-size: 13px; height: 25px;">
+              <div class="container" style="height: 25px;">
           <div id = "divSecondary" class="nav-collapse collapse">
             <ul id="c_secondary" class="nav" style="display: block; left: 19%;">
-              <li><a href="#cake1" rel="cake1">Tea Cakes</a></li>
-              <li><a href="#cake2" rel="cake2">Layer Cakes</a></li>
-              <li><a href="#cake3" rel="cake3">Cheesecakes</a></li>
-              <li><a href="#cake4" rel="cake4">Brownies</a></li>
-              <li><a href="#cake5" rel="cake5">Cookies</a></li>
-              <li><a href="#cake6" rel="cake6">Whoopie Pies</a></li>
-              <li><a href="#cup3" rel="cup3">Cupcakes</a></li>
-              <li><a href="#cup4" rel="cup4">Gifts</a></li> 
-            </ul>            
+              <li><a href="http://localhost/forum2/tea-cakes/" rel="tea-cakes">Tea Cakes</a></li>
+              <li><a href="http://localhost/forum2/layer-cakes/" rel="layer-cakes">Layer Cakes</a></li>
+              <li><a href="http://localhost/forum2/cheese-cakes/" rel="cheese-cakes">Cheesecakes</a></li>
+              <li><a href="http://localhost/forum2/brownies/" rel="brownies">Brownies</a></li>
+              <li><a href="http://localhost/forum2/cookies/" rel="cookies">Cookies</a></li>
+              <li><a href="http://localhost/forum2/whoopie-pies/" rel="whoopie-pies">Whoopie Pies</a></li>
+              <li><a href="http://localhost/forum2/cup-cakes/" rel="cup-cakes">Cupcakes</a></li>
+              <li><a href="http://localhost/forum2/gifts/" rel="gifts">Gifts</a></li> 
+            </ul>
+            <input type="hidden" id="inputActivedLink"/>            
           </div><!--/.nav-collapse -->
         </div>
       </div>
 </div>
-<header>
-	<h1></h1>
-</header>
