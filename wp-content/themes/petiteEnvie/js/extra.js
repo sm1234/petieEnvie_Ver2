@@ -1,7 +1,7 @@
 jQuery(document).ready(function($) {
 $('#prev-panel').hide();
 
-var navigationWidth = jQuery('#peBody').width();
+var navigationWidth = jQuery(window).width();
 var navigationHeight = $('.navbar').height();
 var navItems =[];
 var navItems2 =[];
@@ -25,7 +25,7 @@ slideDown();
 });//end slide-down
 
 var scrollTo = function(element) {
-	if(navigationWidth>963)
+	if(navigationWidth>625)
 	{		
         $('html, body').animate({
             scrollTop: element.offset().top - navigationHeight
@@ -68,6 +68,7 @@ scrollTo($current.next());
 }
 else
 {
+location.href=$("a[rel=tea-cakes]").attr("href");
 $("a[rel=tea-cakes]").parent().addClass("active");
 } 
 }//slideDown

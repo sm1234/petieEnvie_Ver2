@@ -2,13 +2,26 @@
 
 
 function resizingStuff() {
-	var navigationWidth = jQuery('#peBody').width();	
+	var navigationWidth = jQuery(window).width();	
 	var navigationHeight = jQuery('.navbar').height();
-	if(navigationWidth>963)
+	var container_width = jQuery('.container').width() - 155;
+	var container_width_secondary = jQuery('.container').width();
+	var left_value_primary = (container_width - jQuery('#c_primary').outerWidth()) / 2;
+	if(navigationWidth>625)
 	{
+		if(container_width_secondary<775)
+		{
+			jQuery('#c_secondary > li > a').css('padding','2px 5px 3px');
+		}
+		else
+		{
+			jQuery('#c_secondary > li > a').css('padding','2px 15px 3px');
+		}
+	var left_value_secondary = (jQuery('.container').width() - jQuery('#c_secondary').outerWidth()) / 2;
 	jQuery('.center1').show();
 	jQuery('.center1').center1(true);
-	jQuery('#c_primary').css('left', '28%');
+	jQuery('#c_primary').css('left',left_value_primary+'px');
+	jQuery('#c_secondary').css('left',left_value_secondary+'px');
 	var pageHeight = jQuery(window).height();
 	var panelHeight = pageHeight - navigationHeight;
 	jQuery('.panel').css('height', panelHeight);
@@ -18,6 +31,7 @@ function resizingStuff() {
 	jQuery('.center1').hide();
 	jQuery('.center1').center(true);
 	jQuery('#c_primary').css('left', '0%');
+	jQuery('#c_secondary').css('left','0%');
 	var pageHeight = jQuery(window).height();
 	jQuery('.panel').css('height', pageHeight);
 	}
@@ -70,7 +84,7 @@ jQuery("#c_secondary a").click(function() {
 
 // Fire it on window resize
 jQuery(window).resize(function($) {
-	var navigationWidth = jQuery('#peBody').width();
+	//var navigationWidth = jQuery(window).width();
     resizingStuff();
 //	if(navigationWidth<963)
 //	{

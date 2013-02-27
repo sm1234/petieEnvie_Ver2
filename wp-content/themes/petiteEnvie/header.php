@@ -1,3 +1,4 @@
+
 <?php
 /**
  * The Header for our theme.
@@ -19,6 +20,13 @@
 <html>
 <!--<![endif]-->
 <head>
+<script type="text/javascript">
+jQuery(document).ready(function($) {
+if(screen.width <= 641){
+ window.location = "http://localhost/forum2/mobile/";
+}
+});
+</script>
 <title></title>
 <meta content="text/html; charset=utf-8" http-equiv="Content-Type"></meta>
 <meta name="viewport" content="width=device-width" />
@@ -48,9 +56,9 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a href="http://localhost/forum2" class="brand" style="margin-left:20px;"><img src="<?php echo get_template_directory_uri().'/img/logo2.jpg' ?>"/></a>
+          <a href="http://localhost/forum2/mobile/" class="brand" style="margin-left:20px;"><img src="<?php echo get_template_directory_uri().'/img/logo2.jpg' ?>"/></a>
           <div class="nav-collapse collapse">
-            <ul id="c_primary" class="nav" style="left: 28%;">
+            <ul id="c_primary" class="nav">
               <li id="c_about"><a href="http://localhost/forum2/home-3/">About</a></li>
               <li id="c_catalogue"><a href="http://localhost/forum2/services-3/">Catalogue</a></li>          
               <li id="c_blog"><a href="http://localhost/forum2/blog/">Blog</a></li>
@@ -82,8 +90,8 @@
       </div>
             <div class="navbar-inner Oursecondary" style="font-size: 13px; height: 25px;">
               <div class="container" style="height: 25px;">
-          <div id = "divSecondary" class="nav-collapse collapse">
-            <ul id="c_secondary" class="nav" style="display: block; left: 19%;">
+          <div id = "divSecondary">
+            <ul id="c_secondary" class="nav" style="display: block;">
               <li><a href="http://localhost/forum2/tea-cakes/" rel="tea-cakes">Tea Cakes</a></li>
               <li><a href="http://localhost/forum2/layer-cakes/" rel="layer-cakes">Layer Cakes</a></li>
               <li><a href="http://localhost/forum2/cheese-cakes/" rel="cheese-cakes">Cheesecakes</a></li>

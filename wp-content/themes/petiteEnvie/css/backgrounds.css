@@ -20,7 +20,7 @@
 
 }
 
-@media (max-width: 979px){
+@media (max-width: 641px){
 .services .panel-1 {
 	background-image: url('../img/c_s2.jpg') !important;
 }
