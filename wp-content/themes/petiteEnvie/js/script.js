@@ -2,7 +2,6 @@
 
 
 function resizingStuff() {
-	jQuery('#next-panel').show();
 	var navigationWidth = jQuery(window).width();	
 	var navigationHeight = jQuery('.navbar').height();
 	//var container_width = jQuery('.container').width() - 155;
