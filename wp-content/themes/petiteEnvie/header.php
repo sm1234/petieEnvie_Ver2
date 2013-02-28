@@ -22,8 +22,8 @@
 <head>
 <script type="text/javascript">
 jQuery(document).ready(function($) {
-if(screen.width <= 641){
- window.location = "http://localhost/forum2/mobile/";
+if(screen.width <= 480){
+ window.location = "<?php bloginfo('url')?>/mobile/";
 }
 });
 </script>
@@ -56,14 +56,14 @@ if(screen.width <= 641){
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a href="http://localhost/forum2/mobile/" class="brand" style="margin-left:20px;"><img src="<?php echo get_template_directory_uri().'/img/logo2.jpg' ?>"/></a>
+          <a href="<?php bloginfo('url')?>" class="brand" style="margin-left:20px;"><img src="<?php echo get_template_directory_uri().'/img/logo2.jpg' ?>"/></a>
           <div class="nav-collapse collapse">
             <ul id="c_primary" class="nav">
-              <li id="c_about"><a href="http://localhost/forum2/home-3/">About</a></li>
-              <li id="c_catalogue"><a href="http://localhost/forum2/services-3/">Catalogue</a></li>          
-              <li id="c_blog"><a href="http://localhost/forum2/blog/">Blog</a></li>
-              <li id="c_gallery"><a href="http://localhost/forum2/gallery/">Gallery</a></li>
-              <li id="c_contact"><a href="http://localhost/forum2/contact-us-3/">Contact</a></li>
+              <li id="c_about"><a href="<?php bloginfo('url')?>/home-3/">About</a></li>
+              <li id="c_catalogue"><a href="<?php bloginfo('url')?>/services-3/">Catalogue</a></li>          
+              <li id="c_blog"><a href="<?php bloginfo('url')?>/blog/">Blog</a></li>
+              <li id="c_gallery"><a href="<?php bloginfo('url')?>/gallery/">Gallery</a></li>
+              <li id="c_contact"><a href="<?php bloginfo('url')?>/contact-us-3/">Contact</a></li>
             </ul>
             <ul class="nav pull-right" style="margin-right:20px;">
 				<li id="contactUs" class="dropdown">
@@ -92,16 +92,15 @@ if(screen.width <= 641){
               <div class="container" style="height: 25px;">
           <div id = "divSecondary">
             <ul id="c_secondary" class="nav" style="display: block;">
-              <li><a href="http://localhost/forum2/tea-cakes/" rel="tea-cakes">Tea Cakes</a></li>
-              <li><a href="http://localhost/forum2/layer-cakes/" rel="layer-cakes">Layer Cakes</a></li>
-              <li><a href="http://localhost/forum2/cheese-cakes/" rel="cheese-cakes">Cheesecakes</a></li>
-              <li><a href="http://localhost/forum2/brownies/" rel="brownies">Brownies</a></li>
-              <li><a href="http://localhost/forum2/cookies/" rel="cookies">Cookies</a></li>
-              <li><a href="http://localhost/forum2/whoopie-pies/" rel="whoopie-pies">Whoopie Pies</a></li>
-              <li><a href="http://localhost/forum2/cup-cakes/" rel="cup-cakes">Cupcakes</a></li>
-              <li><a href="http://localhost/forum2/gifts/" rel="gifts">Gifts</a></li> 
-            </ul>
-            <input type="hidden" id="inputActivedLink"/>            
+              <li><a href="<?php bloginfo('url')?>/tea-cakes/" rel="tea-cakes">Tea Cakes</a></li>
+              <li><a href="<?php bloginfo('url')?>/layer-cakes/" rel="layer-cakes">Layer Cakes</a></li>
+              <li><a href="<?php bloginfo('url')?>/cheese-cakes/" rel="cheese-cakes">Cheesecakes</a></li>
+              <li><a href="<?php bloginfo('url')?>/brownies/" rel="brownies">Brownies</a></li>
+              <li><a href="<?php bloginfo('url')?>/cookies/" rel="cookies">Cookies</a></li>
+              <li><a href="<?php bloginfo('url')?>/whoopie-pies/" rel="whoopie-pies">Whoopie Pies</a></li>
+              <li><a href="<?php bloginfo('url')?>/cup-cakes/" rel="cup-cakes">Cupcakes</a></li>
+              <li><a href="<?php bloginfo('url')?>/gifts/" rel="gifts">Gifts</a></li> 
+            </ul>            
           </div><!--/.nav-collapse -->
         </div>
       </div>

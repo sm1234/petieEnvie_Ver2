@@ -13,11 +13,9 @@ require_once 'mobile_header.php';
 
 <nav>
 	<ul class="primary">
-		<li><a href="index.php">About</a></li>
-		<li><a href="http://localhost/forum2/m-services/">catalogue</a></li>
-		<li><a href="case-studies.php">Blog</a></li>
-		<li><a href="venues.php">Gallery</a></li>
-		<li class='active'><a href="http://localhost/forum2/m-contact/">Contact</a></li>
+		<li><a href="<?php bloginfo('url')?>/mobile/">About</a></li>
+		<li><a href="<?php bloginfo('url')?>/m-services/">Catalogue</a></li>
+		<li class='active'><a href="<?php bloginfo('url')?>/m-contact/">Contact</a></li>
 	</ul>
 </nav>
 
@@ -28,13 +26,11 @@ require_once 'mobile_header.php';
 					<p style="font-size:40px; font-weight: bold;">-<br>Contact<br>-</p>
 					<p>Address Goes Here</p><br/>
 					<p class="maquette">Tel: XX XXXX XXXX<br><br/><br/>Email <a class="contact-link" href="mailto:queries@petiteenvie.com">queries@petiteenvie.com</a></p>
-					
-			<table style="width:300px;">
+					<br/><br/>
+			<table style="width:250px; text-align: center; margin:0 auto">
 						<tbody><tr>
 							<td><a id="tw"></a></td>
-							<td><a id="fb"></a></td>
-						
-						
+							<td><a id="fb"></a></td>						
 							<td><a id="ins"></a></td>
 							<td><a id="pin"></a></td>
 						</tr>

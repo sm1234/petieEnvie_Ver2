@@ -13,34 +13,47 @@ require_once 'mobile_header.php';
 
 <nav>
 	<ul class="primary">
-		<li><a href="index.php">About</a></li>
-		<li><a href="http://localhost/forum2/m-services/">catalogue</a></li>
-		<li><a href="case-studies.php">Blog</a></li>
-		<li><a href="venues.php">Gallery</a></li>
-		<li><a href="http://localhost/forum2/m-contact/">Contact</a></li>
+		<li class="active"><a href="<?php bloginfo('url')?>/mobile/">About</a></li>
+		<li><a href="<?php bloginfo('url')?>/m-services/">catalogue</a></li>
+		<li><a href="<?php bloginfo('url')?>/m-contact/">Contact</a></li>
 	</ul>
 </nav>
 <div id="page">
 
 
 <img src="<?php bloginfo('template_directory')?>/img/c_s2.jpg">
-<div class="light-pink panel">
+<div class="c_blue panel">
 	<p class="intro">Welcome to Petite Envie</p>
-	<p>We believe in creating the most delicious items only</p>	
+	<p>We believe in creating the most delicious and tempting items only
+		We believe in creating the most delicious and tempting items only
+		We believe in creating the most delicious and tempting items only
+		We believe in creating the most delicious and tempting items only
+		We believe in creating the most delicious and tempting items only
+		We believe in creating the most delicious and tempting items only</p>	
 </div>
 
 <img src="<?php bloginfo('template_directory')?>/img/c_s4.jpg">
 
-<div class="pink panel">
+<div class="c_purple panel">
 	<p class="intro">Welcome to Petite Envie</p>
-	<p>We believe in creating the most delicious items only</p>	
+	<p>We believe in creating the most delicious and tempting items only
+		We believe in creating the most delicious and tempting items only
+		We believe in creating the most delicious and tempting items only
+		We believe in creating the most delicious and tempting items only
+		We believe in creating the most delicious and tempting items only
+		We believe in creating the most delicious and tempting items only</p>	
 </div>
 
 <img src="<?php bloginfo('template_directory')?>/img/c_s6.jpg">
 
-<div class="light-blue panel">
+<div class="c_light-blue panel">
 	<p class="intro">Welcome to Petite Envie</p>
-	<p>We believe in creating the most delicious items only</p>
+	<p>We believe in creating the most delicious and tempting items only
+		We believe in creating the most delicious and tempting items only
+		We believe in creating the most delicious and tempting items only
+		We believe in creating the most delicious and tempting items only
+		We believe in creating the most delicious and tempting items only
+		We believe in creating the most delicious and tempting items only</p>
 </div>
 
 </div>

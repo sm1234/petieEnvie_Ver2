@@ -142,6 +142,22 @@ img {
 	background-color: #F8F7F3;
 }
 
+.c_blue {
+	background-color: rgb(155,191,217);
+}
+
+.c_purple {
+	background-color: rgb(144,124,187);
+}
+
+.c_light-blue {
+	background-color: rgb(116,174,212);
+}
+
+.c_pink {
+	background-color: rgb(240,169,211);
+}
+
 .case-studies p,
 .venues p {
 	color: #2a2b2b;
@@ -266,9 +282,9 @@ p.social {
 }
 #tw {
 	display:inline-block;
-	height: 24px;
-	width: 24px;
-	background: url(../img/icon_twitter_small.png) no-repeat center top;
+	height: 37px;
+	width: 37px;
+	background: url(../img/icon_twitter.png) no-repeat center top;
 	text-indent: -9999em;
 }
 
@@ -282,16 +298,16 @@ p.social {
 
 #pin {
 	display:inline-block;
-	height: 24px;
-	width: 24px;
-	background: url(../img/icon_pinterest_small.png) no-repeat center top;
+	height: 37px;
+	width: 37px;
+	background: url(../img/icon_pinterest.png) no-repeat center top;
 	text-indent: -9999em;
 }
 
 #ins {
 	display:inline-block;
-	height: 24px;
-	width: 24px;
-	background: url(../img/icon_instagram_small.png) no-repeat center top;
+	height: 37px;
+	width: 37px;
+	background: url(../img/icon_instagram.png) no-repeat center top;
 	text-indent: -9999em;
 }
