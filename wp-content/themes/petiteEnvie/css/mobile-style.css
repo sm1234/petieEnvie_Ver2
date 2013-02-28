@@ -282,32 +282,32 @@ p.social {
 }
 #tw {
 	display:inline-block;
-	height: 37px;
-	width: 37px;
-	background: url(../img/icon_twitter.png) no-repeat center top;
+	height: 64px;
+	width: 64px;
+	background: url(../img/tw1.png) no-repeat center top;
 	text-indent: -9999em;
 }
 
 #fb {
 	display:inline-block;
-	height: 37px;
-	width: 37px;
-	background: url(../img/icon_facebook.png) no-repeat center top;
+	height: 64px;
+	width: 64px;
+	background: url(../img/fb1.png) no-repeat center top;
 	text-indent: -9999em;
 }
 
 #pin {
 	display:inline-block;
-	height: 37px;
-	width: 37px;
-	background: url(../img/icon_pinterest.png) no-repeat center top;
+	height: 64px;
+	width: 64px;
+	background: url(../img/pin1.png) no-repeat center top;
 	text-indent: -9999em;
 }
 
 #ins {
 	display:inline-block;
-	height: 37px;
-	width: 37px;
-	background: url(../img/icon_instagram.png) no-repeat center top;
+	height: 64px;
+	width: 64px;
+	background: url(../img/in1.png) no-repeat center top;
 	text-indent: -9999em;
 }

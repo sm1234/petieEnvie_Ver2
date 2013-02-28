@@ -2,7 +2,7 @@
 <head>
 <title></title>
 <meta content="text/html; charset=utf-8" http-equiv="Content-Type"></meta>
-<meta name="viewport" content="width=641" />
+<meta name="viewport" content="width=480" />
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
 <link media="screen" rel="stylesheet" href="<?php bloginfo('template_directory')?>/css/mobile-style.css">
 <?php
