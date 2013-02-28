@@ -388,6 +388,7 @@ body.contact {
 	text-indent: -9999em;
 }
 #tw {
+	padding-left: 17px;
 	display:inline-block;
 	height: 24px;
 	width: 24px;
@@ -396,6 +397,7 @@ body.contact {
 }
 
 #fb {
+	padding-left: 10px;
 	display:inline-block;
 	height: 24px;
 	width: 24px;
@@ -404,6 +406,7 @@ body.contact {
 }
 
 #pin {
+	padding-left: 10px;
 	display:inline-block;
 	height: 24px;
 	width: 24px;
@@ -412,9 +415,10 @@ body.contact {
 }
 
 #ins {
+	padding-left: 10px;
 	display:inline-block;
 	height: 24px;
-	width: 24px;
+	width: 24px;
 	background: url(../img/icon_instagram_small.png) no-repeat center top;
 	text-indent: -9999em;
 }

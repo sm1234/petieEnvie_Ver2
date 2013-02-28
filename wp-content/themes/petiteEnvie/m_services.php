@@ -59,7 +59,7 @@ require_once 'mobile_header.php';
 	Enough said!</p>	
 </div>
 
-<img src="<?php bloginfo('template_directory')?>/img/c_s6.jpg">
+<img src="<?php bloginfo('template_directory')?>/img/c_s6_1.jpg">
 
 <div class="c_light-blue panel">
 	<p class="intro">Fancy second helpings?

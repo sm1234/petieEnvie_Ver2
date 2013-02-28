@@ -16,7 +16,7 @@ get_header();
 	</div>
 
 	
-	<div id="cake2" style="height: 690px;" class="panel panel-2">
+	<div id="cake2" class="panel panel-2">
 		<div style="position: absolute; margin: 0px; top: 100.6px; left: 605px;" class="headline-block first center1 panel-block">
 			<p>Celebration cakes for very special occasions</p>
 		</div>

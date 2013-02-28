@@ -22,13 +22,13 @@
 
 @media (max-width: 790px){
 .services .panel-1 {
-	background-image: url('../img/c_s2.jpg') !important;
+	background-image: url('../img/c_s6.jpg') !important;
 }
 .services .panel-2 {
 	background-image: url('../img/c_s4.jpg') !important;
 }
 .services .panel-3 {
-	background-image: url('../img/c_s6.jpg') !important;
+	background-image: url('../img/c_s2.jpg') !important;
 }
 .services .panel-4 {
 	background-image: url('../img/c_s8.jpg') !important;
@@ -86,7 +86,7 @@
 /*services page*/
 
 .services .panel-1 {
-	background-image: url('../img/s2_1.jpg');
+	background-image: url('../img/s6.jpg');
 }
 
 .services .panel-2 {
@@ -94,7 +94,7 @@
 }
 
 .services .panel-3 {
-	background-image: url('../img/s6.jpg');
+	background-image: url('../img/s2_1.jpg');
 }
 
 .services .panel-4 {

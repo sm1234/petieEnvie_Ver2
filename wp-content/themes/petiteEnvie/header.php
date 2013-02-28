@@ -62,17 +62,12 @@ if(screen.width <= 480){
             <ul class="nav pull-right" style="margin-right:20px;">
 				<li id="contactUs" class="dropdown">
                       <a href="#" id="contactUs" role="button" class="dropdown-toggle" data-toggle="dropdown" style="padding: 7px 3px 8px;">Follow Us<b class="caret"></b></a>
-                      <div class="dropdown-menu" role="menu" aria-labelledby="contactUs">
-						<table style="width:300px;">
-						<tbody><tr>
-							<td><a id="tw"></a>&nbsp;&nbsp;<a href="#">Twitter</a></td>
-							<td><a id="fb"></a>&nbsp;&nbsp;<a href="#">Facebook</a></td>
-						</tr>
-						<tr>
-							<td><a id="ins"></a>&nbsp;&nbsp;<a href="#">Instagram</a></td>
-							<td><a id="pin"></a>&nbsp;&nbsp;<a href="#">Pinterest</a></td>
-						</tr>
-					</tbody></table>
+                      <div class="dropdown-menu" role="menu" aria-labelledby="contactUs" style="height:25px">
+						<a id="tw"></a>
+							<td><a id="fb"></a>
+						<a id="ins"></a>
+							<a id="pin"></a>
+						
                       </div>
                 </li>
 			</ul>      
