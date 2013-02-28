@@ -11,6 +11,8 @@ get_header();
 <script type="text/javascript">
 jQuery(document).ready(function($) {
 	$(".Oursecondary").hide();
+	$('#prev-panel').hide();
+	$('#next-panel').hide();
 	var navigationHeight = jQuery('.navbar').height();
 	jQuery('body').css('padding-top', navigationHeight);
 	$("#c_blog").addClass("active");

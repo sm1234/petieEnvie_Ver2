@@ -40,7 +40,11 @@ var scrollTo = function(element) {
 }
 
 function slideUp(){	
-
+if(jQuery('#prev-panel').css('display') == 'none')
+{
+	var $current2 = $('#c_secondary > .active');
+	$current2.removeClass();
+}
 var $current = $('#page > .current');
 if (!$current.index() == 0) {
 $current.removeClass('current').prev().addClass('current');
@@ -53,7 +57,12 @@ scrollTo($current.prev());
 
 function slideDown(){
 var $current2 = $('#c_secondary > .active');
-if($current2.length>0)
+if((jQuery(".Oursecondary").css('display')) == 'block' && $current2.length == 0)
+{
+location.href=$("a[rel=tea-cakes]").attr("href");
+$("a[rel=tea-cakes]").parent().addClass("active");
+}
+else
 {
 var $current = $('#page > .current');
 $current.removeClass('current').next().addClass('current');
@@ -66,11 +75,7 @@ scrollTo($current.next());
 ($current.index()>=0)? $('#prev-panel').show():$('#prev-panel').hide();  	
 ($current.index()==$('#page > div.panel').length - 2)? $('#next-panel').hide():$('#next-panel').show();
 }
-else
-{
-location.href=$("a[rel=tea-cakes]").attr("href");
-$("a[rel=tea-cakes]").parent().addClass("active");
-} 
+ 
 }//slideDown
 
 var pressedCount =0;

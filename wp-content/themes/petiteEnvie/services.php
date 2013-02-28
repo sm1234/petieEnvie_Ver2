@@ -54,7 +54,9 @@ jQuery(document).ready(function($) {
 	$("#peBody").removeClass();
 	$("#peBody").addClass("services");
 	var container_width_secondary = jQuery('.container').width();
-	if(container_width_secondary<775)
+	//alert(container_width_secondary);
+	//alert(jQuery(window).width());
+	if(jQuery(window).width()<775)
 		{
 			jQuery('#c_secondary > li > a').css('padding','2px 5px 3px');
 		}

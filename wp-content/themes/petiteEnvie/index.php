@@ -51,7 +51,7 @@ get_header();
 
 <script type="text/javascript">
 jQuery(document).ready(function($) {
-	$("#c_secondary").hide().delay("300").slideDown(400);
+	$(".Oursecondary").hide();
 	$("#peBody").removeClass();
 	$("#peBody").addClass("services");
 	var navigationHeight = jQuery('.navbar').height();

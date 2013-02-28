@@ -4,13 +4,16 @@
 function resizingStuff() {
 	var navigationWidth = jQuery(window).width();	
 	var navigationHeight = jQuery('.navbar').height();
-	var container_width = jQuery('.container').width() - 155;
-	var container_width_secondary = jQuery('.container').width();
+	//var container_width = jQuery('.container').width() - 155;
+	//var container_width_secondary = jQuery('.container').width();
+	var container_width = navigationWidth -155;
+	var container_width_secondary = navigationWidth;
 	var left_value_primary = (container_width - jQuery('#c_primary').outerWidth()) / 2;
 	if(navigationWidth>625)
 	{
 		if(container_width_secondary<775)
 		{
+			jQuery('.center1').center(true);
 			jQuery('#c_secondary > li > a').css('padding','2px 5px 3px');
 		}
 		else
@@ -28,7 +31,7 @@ function resizingStuff() {
 	}
 	else
 	{
-	jQuery('.center1').hide();
+	//jQuery('.center1').hide();
 	jQuery('.center1').center(true);
 	jQuery('#c_primary').css('left', '0%');
 	jQuery('#c_secondary').css('left','0%');

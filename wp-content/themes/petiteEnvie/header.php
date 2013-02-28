@@ -51,14 +51,8 @@ if(screen.width <= 480){
 <div class="navbar navbar-inverse navbar-fixed-top">
       <div id="primaryMenu" class="navbar-inner">
         <div class="container">
-          <button data-target=".nav-collapse" data-toggle="collapse" class="btn btn-navbar" type="button">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
           <a href="<?php bloginfo('url')?>" class="brand" style="margin-left:20px;"><img src="<?php echo get_template_directory_uri().'/img/logo2.jpg' ?>"/></a>
-          <div class="nav-collapse collapse">
-            <ul id="c_primary" class="nav">
+              <ul id="c_primary" class="nav">
               <li id="c_about"><a href="<?php bloginfo('url')?>/home-3/">About</a></li>
               <li id="c_catalogue"><a href="<?php bloginfo('url')?>/services-3/">Catalogue</a></li>          
               <li id="c_blog"><a href="<?php bloginfo('url')?>/blog/">Blog</a></li>
@@ -80,15 +74,11 @@ if(screen.width <= 480){
 						</tr>
 					</tbody></table>
                       </div>
-
                 </li>
-			</ul>
-
-            
-          </div><!--/.nav-collapse -->
+			</ul>      
         </div>
       </div>
-            <div class="navbar-inner Oursecondary" style="font-size: 13px; height: 25px;">
+      <div class="navbar-inner Oursecondary" style="font-size: 13px; height: 25px;">
               <div class="container" style="height: 25px;">
           <div id = "divSecondary">
             <ul id="c_secondary" class="nav" style="display: block;">
@@ -101,7 +91,7 @@ if(screen.width <= 480){
               <li><a href="<?php bloginfo('url')?>/cup-cakes/" rel="cup-cakes">Cupcakes</a></li>
               <li><a href="<?php bloginfo('url')?>/gifts/" rel="gifts">Gifts</a></li> 
             </ul>            
-          </div><!--/.nav-collapse -->
+          </div>
         </div>
       </div>
 </div>

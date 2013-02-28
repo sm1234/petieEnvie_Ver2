@@ -5,7 +5,7 @@ Template Name: Mobile Contact
 require_once 'mobile_header.php';
 ?>
 
-<body class="contact">
+<body class="contact" style="background-color: rgb(203,127,125);">
 	
 <div id="mobile-wrapper">
 
