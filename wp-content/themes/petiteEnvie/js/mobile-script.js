@@ -2,8 +2,8 @@ jQuery(document).ready(function($) {
 $('nav').hide();
 
 $('#section-nav').toggle(function() {
-	$('nav').slideDown('slow');
+	$('nav').slideDown('fast');
 }, function() {
-	$('nav').slideUp('slow');
+	$('nav').slideUp('fast');
 });
 });

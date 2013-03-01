@@ -21,7 +21,13 @@ wp_enqueue_script('def');
 wp_enqueue_script('ghi');
 ?>
 
-
+<script type="text/javascript">
+jQuery(document).ready(function($) {
+if(screen.width <= 480){
+ window.location = "<?php bloginfo('url')?>/mobile/";
+}
+});
+</script>
 
 <?php 
 

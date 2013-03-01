@@ -4,50 +4,44 @@ Template Name: Services
 */
 get_header();
 ?>
-
 <div id="page">
-	<div id="cake1" style="height: 690px;" class="panel panel-1 current">
+<?php
+$curr = 0;
+$catalogue=new WP_Query();
+$catalogue->query('category_name=catalogue&order=ASC');
+if ($catalogue->have_posts()) : 
+while ( $catalogue->have_posts() ) : $catalogue->the_post();
+$postid = get_the_ID();
+$post_thumbnail_id = get_post_thumbnail_id();
+$feat_img = wp_get_attachment_url($post_thumbnail_id);
+?>
+<?php if ($curr == 0) { ?>
+	
+
+	<div id="cake" style="height: 690px; background-image: url('<?php echo $feat_img;  ?>')" class="panel current">
 		<header>
 		<h1></h1>
 		</header>
 		<div style="position: absolute; margin: 0px; top: 100.6px; left: 605px;" class="headline-block first center1 panel-block">
-			<p>Traditionally enjoyed at tea time, these classic recipes also make charming gifts for special occasions and festivals.</p>
-		</div>	
-	</div>
-
-	
-	<div id="cake2" class="panel panel-2">
-		<div style="position: absolute; margin: 0px; top: 100.6px; left: 605px;" class="headline-block first center1 panel-block">
-			<p>Celebration cakes for very special occasions</p>
+			<p><?php the_content(); ?></p>
 		</div>
 	</div>
-
-
-	<div id="cake3" style="height: 690px;" class="panel panel-3">
+<?php } 
+else {
+?>
+<div id="cake" style="height: 690px; background-image: url('<?php echo $feat_img;  ?>')" class="panel">
+		
+		
 		<div style="position: absolute; margin: 0px; top: 100.6px; left: 605px;" class="headline-block first center1 panel-block">
-			<p>Cheesecakes are creamy and comforting desserts with just the right amount of crunch!</p>
-		</div>		
-	</div>
-
-	
-	<div id="cake4" style="height: 700px;" class="panel panel-4">
-		<div style="position: absolute; margin: 0px; top: 100.6px; left: 605px;" class="headline-block first center1 panel-block">
-			<p>We use dark coverture chocolate to make our brownies, making them rich, dense and irresistible</p>
+			<p><?php the_content(); ?></p>
 		</div>
 	</div>
-	
-	<div id="cake5" style="height: 690px;" class="panel panel-5">
-		<div style="position: absolute; margin: 0px; top: 100.6px; left: 605px;" class="headline-block first center1 panel-block">
-			<p>Home-made cookies with fresh, traditional ingredients always beat the flavor of the store bought variety! These are perfect as personal treats and also make elegant gifts.</p>
-		</div>		
-	</div>	
-	
-	<div id="cake6" style="height: 700px;" class="panel panel-6">
-		<div style="position: absolute; margin: 0px; top: 100.6px; left: 605px;" class="headline-block first center1 panel-block">
-			<p>A delicate French Cookie. An almond based meringue that is crisp and moist at the same time.</p>
-		</div>
-	</div>	
-</div>
+<?php
+}
+$curr++;
+endwhile;
+endif;
+?>
 
 <script type="text/javascript">
 jQuery(document).ready(function($) {

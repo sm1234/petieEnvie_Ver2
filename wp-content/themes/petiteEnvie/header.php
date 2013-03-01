@@ -20,13 +20,6 @@
 <html>
 <!--<![endif]-->
 <head>
-<script type="text/javascript">
-jQuery(document).ready(function($) {
-if(screen.width <= 480){
- window.location = "<?php bloginfo('url')?>/mobile/";
-}
-});
-</script>
 <title></title>
 <meta content="text/html; charset=utf-8" http-equiv="Content-Type"></meta>
 <meta name="viewport" content="width=device-width" />
