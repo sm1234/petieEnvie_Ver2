@@ -47,7 +47,7 @@
           <a href="<?php bloginfo('url')?>" class="brand" style="margin-left:20px;"><img src="<?php echo get_template_directory_uri().'/img/logo2.jpg' ?>"/></a>
               <ul id="c_primary" class="nav">
               <li id="c_about"><a href="<?php bloginfo('url')?>/home-3/">About</a></li>
-              <li id="c_catalogue"><a href="<?php bloginfo('url')?>/services-3/">Catalogue</a></li>                     
+              <li id="c_catalogue"><a href="<?php bloginfo('url')?>/main-catalogue/">Catalogue</a></li>                     
               <li id="c_gallery"><a href="<?php bloginfo('url')?>/gallery/">Gallery</a></li>
               <li id="c_contact"><a href="<?php bloginfo('url')?>/contact-us-3/">Contact</a></li>
               <li id="c_blog"><a href="<?php bloginfo('url')?>/blog/">Blog</a></li>

@@ -84,6 +84,11 @@ var $current = $('#page > .current');
 var $current2 = $('#c_secondary > .active');
  if (event.which == 40) {
      event.preventDefault();
+if((jQuery(".Oursecondary").css('display')) == 'block' && $current2.length == 0)
+{
+location.href=$("a[rel=tea-cakes]").attr("href");
+$("a[rel=tea-cakes]").parent().addClass("active");
+}
 if(pressedCount ==0 && $current.index()<=($('#page > div.panel').length - 2)){
 		 slideDown();
 	 }
