@@ -8,7 +8,7 @@ get_header();
 <h1></h1>
 </header>
 <div class="static-panel">
-	<div class="container">
+	<div class="container" style="color: white;">
 		<div class="row-fluid">
 			<div class="span4 offset2">
 

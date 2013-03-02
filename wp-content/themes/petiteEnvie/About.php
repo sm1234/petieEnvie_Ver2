@@ -10,6 +10,8 @@ get_header();
 
 <script type="text/javascript">
 jQuery(document).ready(function($) {
+	$("#peBody").removeClass();
+	$("#peBody").addClass("about");
 	$(".Oursecondary").hide();
 	$('#prev-panel').hide();
 	$('#next-panel').hide();

@@ -20,7 +20,7 @@ function resizingStuff() {
 		}
 		else
 		{
-			jQuery('#c_secondary > li > a').css('padding','2px 15px 3px');
+			jQuery('#c_secondary > li > a').css('padding','2px 7px 3px');
 		}
 	var left_value_secondary = (container_width_secondary - jQuery('#c_secondary').outerWidth()) / 2;
 	jQuery('.center1').show();

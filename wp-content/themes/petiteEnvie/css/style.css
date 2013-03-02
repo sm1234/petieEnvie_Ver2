@@ -18,7 +18,7 @@ background-image: linear-gradient(rgb(73,73,73), rgb(85,85,85));
 }
 
 .navbar #c_secondary > li > a {
-	padding: 2px 15px 3px;
+	padding: 2px 7px 3px;
 }
 
 nav .brand {
@@ -372,6 +372,14 @@ nav ul.secondary li a {
 }
 
 body.contact {
+	background-color: rgb(208,127,124);
+}
+
+body.services {
+	background-color: rgb(208,127,124);
+}
+
+body.about {
 	background-color: rgb(208,127,124);
 }
 

@@ -5,7 +5,7 @@
 }
 
 .panel {
-	color: white;
+	color: rgb(71, 21, 29);
 	margin: 0 auto;
 	padding: 0;
 	background: no-repeat fixed center center;
@@ -86,27 +86,33 @@
 /*services page*/
 
 .services .panel-1 {
+	background-color: rgb(120, 163, 208);
 	/*background-image: url('../img/s6.jpg');*/
 }
 
 .services .panel-2 {
-	background-image: url('../img/s4.jpg');
+	background-color: rgb(78, 200, 179);
+	/*background-image: url('../img/s4.jpg');*/
 }
 
 .services .panel-3 {
-	background-image: url('../img/s2_1.jpg');
+	background-color: rgb(255, 206, 153);
+	/*background-image: url('../img/s2_1.jpg');*/
 }
 
 .services .panel-4 {
-	background-image: url('../img/s8.jpg');
+	background-color: rgb(244, 81, 86);
+	/*background-image: url('../img/s8.jpg');*/
 }
 
 .services .panel-5 {
-	background-image: url('../img/s10.jpg');
+	background-color: rgb(239, 151, 1);
+	/*background-image: url('../img/s10.jpg');*/
 }
 
 .services .panel-6 {
-	background-image: url('../img/s12.jpg');
+	background-color: rgb(229, 213, 76);
+	/*background-image: url('../img/s12.jpg');*/
 }
 /*
 .services .panel-7 {

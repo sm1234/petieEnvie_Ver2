@@ -47,10 +47,10 @@
           <a href="<?php bloginfo('url')?>" class="brand" style="margin-left:20px;"><img src="<?php echo get_template_directory_uri().'/img/logo2.jpg' ?>"/></a>
               <ul id="c_primary" class="nav">
               <li id="c_about"><a href="<?php bloginfo('url')?>/home-3/">About</a></li>
-              <li id="c_catalogue"><a href="<?php bloginfo('url')?>/services-3/">Catalogue</a></li>          
-              <li id="c_blog"><a href="<?php bloginfo('url')?>/blog/">Blog</a></li>
+              <li id="c_catalogue"><a href="<?php bloginfo('url')?>/services-3/">Catalogue</a></li>                     
               <li id="c_gallery"><a href="<?php bloginfo('url')?>/gallery/">Gallery</a></li>
               <li id="c_contact"><a href="<?php bloginfo('url')?>/contact-us-3/">Contact</a></li>
+              <li id="c_blog"><a href="<?php bloginfo('url')?>/blog/">Blog</a></li>
             </ul>
             <ul class="nav pull-right" style="margin-right:20px;">
 				<li id="contactUs" class="dropdown">
@@ -66,7 +66,7 @@
 			</ul>      
         </div>
       </div>
-      <div class="navbar-inner Oursecondary" style="font-size: 13px; height: 25px;">
+      <div class="navbar-inner Oursecondary" style="font-size: 12px; height: 25px;">
               <div class="container" style="height: 25px;">
           <div id = "divSecondary">
             <ul id="c_secondary" class="nav" style="display: block;">
@@ -75,7 +75,9 @@
               <li><a href="<?php bloginfo('url')?>/cheese-cakes/" rel="cheese-cakes">Cheesecakes</a></li>
               <li><a href="<?php bloginfo('url')?>/brownies/" rel="brownies">Brownies</a></li>
               <li><a href="<?php bloginfo('url')?>/cookies/" rel="cookies">Cookies</a></li>
-              <li><a href="<?php bloginfo('url')?>/whoopie-pies/" rel="whoopie-pies">Whoopie Pies</a></li>
+              <li><a href="<?php bloginfo('url')?>/macarons/" rel="macarons">Macarons</a></li>
+              <li><a href="<?php bloginfo('url')?>/muffins/" rel="muffins">Muffins</a></li>
+              <li><a href="<?php bloginfo('url')?>/cakes-by-consultation/" rel="cakes-by-consultation">Cakes By Consultation</a></li>
               <li><a href="<?php bloginfo('url')?>/cup-cakes/" rel="cup-cakes">Cupcakes</a></li>
               <li><a href="<?php bloginfo('url')?>/gifts/" rel="gifts">Gifts</a></li> 
             </ul>            
