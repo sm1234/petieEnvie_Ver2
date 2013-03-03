@@ -207,7 +207,7 @@ header {
 
 .headline-block p {
 	text-transform: uppercase;
-	font: 20px 'maquette', sans-serif;
+	/*font: 20px 'maquette', sans-serif;*/
 	letter-spacing: 0.4em;
 }
 

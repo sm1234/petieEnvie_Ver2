@@ -114,11 +114,12 @@
 	background-color: rgb(229, 213, 76);
 	/*background-image: url('../img/s12.jpg');*/
 }
-/*
-.services .panel-7 {
-	background-image: url('../img/s7.jpg');
-}
 
+.services .panel-7 {
+	background-color: rgb(160, 181, 212);
+	/*background-image: url('../img/s7.jpg');*/
+}
+/*
 .services .panel-8 {
 	background-image: url('../img/s8.jpg');
 }
@@ -173,17 +174,17 @@
 /*gallery page*/
 
 .gallery .panel-1 {
-	background-image: url(/tt.php?src=/resources/img/backgrounds/gallery-1.jpg&w=1200);
+	background-image: url('../img/g1.jpg');
 }
 
 .gallery .panel-2 {
-	background-image: url(/tt.php?src=/resources/img/backgrounds/gallery-2.jpg&w=1200);
+	background-image: url('../img/g2.jpg');
 }
 
 .gallery .panel-3 {
-	background-image: url(/tt.php?src=/resources/img/backgrounds/gallery-3.jpg&w=1200);
+	background-image: url('../img/g3.jpg');
 }
-
+/*
 .gallery .panel-4 {
 	background-image: url(/tt.php?src=/resources/img/backgrounds/gallery-4.jpg&w=1200);
 }
@@ -232,7 +233,7 @@
 	background-image: url(/tt.php?src=/resources/img/backgrounds/gallery-15.jpg&w=1200);
 }
 
-
+*/
 
 
 

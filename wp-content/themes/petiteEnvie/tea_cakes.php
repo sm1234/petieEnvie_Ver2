@@ -1,6 +1,6 @@
 <?php
 /*
-Template Name: Services
+Template Name: Tea cakes
 */
 get_header();
 ?>
@@ -11,40 +11,53 @@ get_header();
 		<h1></h1>
 		</header>
 		<div style="position: absolute; margin: 0px; top: 100.6px; left: 605px;" class="headline-block first center1 panel-block">
-			<p>Traditionally enjoyed at tea time, these classic recipes also make charming gifts for special occasions and festivals.</p>
+			<p class="larger">Date and Walnut Loaf</p>
+			<p>This evergreen combination is an old family favourite. It’s light, and moist - a definite treat!</p>
 		</div>	
 	</div>
 
 	
 	<div id="cake2" class="panel panel-2">
 		<div style="position: absolute; margin: 0px; top: 100.6px; left: 605px;" class="headline-block first center1 panel-block">
-			<p>Celebration cakes for very special occasions</p>
+			<p class="larger">Lemon Drizzle Loaf</p>
+			<p>After baking, this cake is drizzled with a lemon syrup that keeps it moist and also gives it just the right amount of tang</p>
 		</div>
 	</div>
 
 
 	<div id="cake3" style="height: 690px;" class="panel panel-3">
 		<div style="position: absolute; margin: 0px; top: 100.6px; left: 605px;" class="headline-block first center1 panel-block">
-			<p>Cheesecakes are creamy and comforting desserts with just the right amount of crunch!</p>
+			<p class="larger">Almond Cake</p>
+			<p>This cake is made with almond paste which we make from scratch. The indulgent middle layer is of an almond cream, also called frangipane</p>
 		</div>		
 	</div>
 
 	
 	<div id="cake4" style="height: 700px;" class="panel panel-4">
 		<div style="position: absolute; margin: 0px; top: 100.6px; left: 605px;" class="headline-block first center1 panel-block">
-			<p>We use dark coverture chocolate to make our brownies, making them rich, dense and irresistible</p>
+			<p class="larger">Chocolate Pound Loaf</p>
+			<p>This is the chocolate version of the classic pound cake, with sprinkles of chocolate chips, and walnuts</p>
 		</div>
 	</div>
 	
 	<div id="cake5" style="height: 690px;" class="panel panel-5">
 		<div style="position: absolute; margin: 0px; top: 100.6px; left: 605px;" class="headline-block first center1 panel-block">
-			<p>Home-made cookies with fresh, traditional ingredients always beat the flavor of the store bought variety! These are perfect as personal treats and also make elegant gifts.</p>
+			<p class="larger">Pineapple Upside-Down Cake</p>
+			<p>This cake is wonderfully moist with sweetness from caramel and pineapple.</p>
 		</div>		
 	</div>	
 	
 	<div id="cake6" style="height: 700px;" class="panel panel-6">
 		<div style="position: absolute; margin: 0px; top: 100.6px; left: 605px;" class="headline-block first center1 panel-block">
-			<p>A delicate French Cookie. An almond based meringue that is crisp and moist at the same time.</p>
+			<p class="larger">Carrot Cake</p>
+			<p>Full of grated carrot and toasted nuts, its covered with sweet and tangy cream cheese frosting.</p>
+		</div>
+	</div>
+	
+	<div id="cake6" style="height: 700px;" class="panel panel-7">
+		<div style="position: absolute; margin: 0px; top: 100.6px; left: 605px;" class="headline-block first center1 panel-block">
+			<p class="larger">Chocolate and Orange Cake</p>
+			<p>Drizzled with freshly made orange syrup and covered with dark melted, chocolate.</p>
 		</div>
 	</div>	
 </div>

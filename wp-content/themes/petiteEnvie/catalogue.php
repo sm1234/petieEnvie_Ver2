@@ -11,6 +11,8 @@ get_header();
 jQuery(document).ready(function($) {
 	$("#peBody").removeClass();
 	$("#peBody").addClass("catalogue");
+	$('#prev-panel').hide();
+	$('#next-panel').hide();
 	var container_width_secondary = jQuery('.container').width();
 	if(jQuery(window).width()<775)
 		{

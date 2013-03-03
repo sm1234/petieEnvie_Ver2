@@ -69,6 +69,7 @@ function resizingStuff() {
 
 // Fire it when the page loads
 jQuery(document).ready(function($) {	
+	
 
 	resizingStuff();
 
