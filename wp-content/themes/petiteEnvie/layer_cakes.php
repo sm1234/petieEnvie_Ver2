@@ -1,6 +1,6 @@
 <?php
 /*
-Template Name: Tea cakes
+Template Name: Layer cakes
 */
 get_header();
 ?>
@@ -11,55 +11,70 @@ get_header();
 		<h1></h1>
 		</header>
 		<div style="position: absolute; margin: 0px; top: 100.6px; left: 605px;" class="headline-block first center1 panel-block">
-			<p class="larger">Date and Walnut Loaf</p>
-			<p>This evergreen combination is an old family favourite. It’s light, and moist - a definite treat!</p>
+			<p class="larger">Opera Cake</p>
+			<p>This is a multilayered classic with coffee butter-cream, chocolate ganache and an almond jaconde sponge, topped off with a chocolate glaze.</p>
 		</div>	
 	</div>
 
 	
 	<div id="cake2" class="panel panel-2">
 		<div style="position: absolute; margin: 0px; top: 100.6px; left: 605px;" class="headline-block first center1 panel-block">
-			<p class="larger">Lemon Drizzle Loaf</p>
-			<p>After baking, this cake is drizzled with a lemon syrup that keeps it moist and also gives it just the right amount of tang</p>
+			<p class="larger">Trifle Cake</p>
+			<p>We took this classic pudding and turned it into a cake. It has layers of vanilla sponge, fruits and a light fruit based custard.</p>
 		</div>
 	</div>
 
 
 	<div id="cake3" style="height: 690px;" class="panel panel-3">
 		<div style="position: absolute; margin: 0px; top: 100.6px; left: 605px;" class="headline-block first center1 panel-block">
-			<p class="larger">Almond Cake</p>
-			<p>This cake is made with almond paste which we make from scratch. The indulgent middle layer is of an almond cream, also called frangipane</p>
+			<p class="larger">Chocolate Cake with Dark Chocolate Custard Filling</p>
+			<p>If you find the usual chocolate fillings too heavy, this cake will let you have the entire flavor of chocolate but with a light custard filling.</p>
 		</div>		
 	</div>
 
 	
 	<div id="cake4" style="height: 700px;" class="panel panel-4">
 		<div style="position: absolute; margin: 0px; top: 100.6px; left: 605px;" class="headline-block first center1 panel-block">
-			<p class="larger">Chocolate Pound Loaf</p>
-			<p>This is the chocolate version of the classic pound cake, with sprinkles of chocolate chips, and walnuts</p>
+			<p class="larger">Chocolate Cake with Vanilla Frosting</p>
+			<p>A rich chocolate cake with a ganache filling and notes of coffee, tempered with vanilla frosting. Ask for an addition of walnuts if you are a nut lover!</p>
 		</div>
 	</div>
 	
 	<div id="cake5" style="height: 690px;" class="panel panel-5">
 		<div style="position: absolute; margin: 0px; top: 100.6px; left: 605px;" class="headline-block first center1 panel-block">
-			<p class="larger">Pineapple Upside-Down Cake</p>
-			<p>This cake is wonderfully moist with sweetness from caramel and pineapple.</p>
+			<p class="larger">Red Velvet Cake with Vanilla or Cream Cheese Frosting</p>
+			<p>This cake looks gorgeous with layers of red cake alternating with white frosting.</p>
 		</div>		
 	</div>	
 	
 	<div id="cake6" style="height: 700px;" class="panel panel-6">
 		<div style="position: absolute; margin: 0px; top: 100.6px; left: 605px;" class="headline-block first center1 panel-block">
-			<p class="larger">Carrot Cake</p>
-			<p>Full of grated carrot and toasted nuts, its covered with sweet and tangy cream cheese frosting.</p>
+			<p class="larger">Chocolate Mousse Cake</p>
+			<p>Layers of chocolate mousse with alternate layers of almond sponge, topped off with a dark chocolate ganache.</p>
 		</div>
 	</div>
 	
 	<div id="cake7" style="height: 700px;" class="panel panel-7">
 		<div style="position: absolute; margin: 0px; top: 100.6px; left: 605px;" class="headline-block first center1 panel-block">
-			<p class="larger">Chocolate and Orange Cake</p>
-			<p>Drizzled with freshly made orange syrup and covered with dark melted, chocolate.</p>
+			<p class="larger">Chocolate Hazelnut Mousse Cake</p>
+			<p>We use chocolate mousse for filling and frosting this light chocolate cake with a mildly crunchy hazelnut disk in the center.</p>
 		</div>
-	</div>	
+	</div>
+	
+	<div id="cake8" style="height: 700px;" class="panel panel-8">
+		<div style="position: absolute; margin: 0px; top: 100.6px; left: 605px;" class="headline-block first center1 panel-block">
+			<p class="larger">Lemon Cake</p>
+			<p>A simple, no fuss cake. Lemon sponge with sweet and tangy notes in the frosting.</p>
+		</div>
+	</div>
+	
+	<div id="cake9" style="height: 700px;" class="panel panel-9">
+		<div style="position: absolute; margin: 0px; top: 100.6px; left: 605px;" class="headline-block first center1 panel-block">
+			<p class="larger">Tiramisu Cake</p>
+			<p>Inspired by the traditional Italian dessert – alternating layers of coffee and chocolate sponge soaked in coffee flavored rum syrup, topped off with coffee cream.</p>
+		</div>
+	</div>
+	
 </div>
 
 <script type="text/javascript">

@@ -1,6 +1,6 @@
 <?php
 /*
-Template Name: Tea cakes
+Template Name: Cookies
 */
 get_header();
 ?>
@@ -11,55 +11,42 @@ get_header();
 		<h1></h1>
 		</header>
 		<div style="position: absolute; margin: 0px; top: 100.6px; left: 605px;" class="headline-block first center1 panel-block">
-			<p class="larger">Date and Walnut Loaf</p>
-			<p>This evergreen combination is an old family favourite. It’s light, and moist - a definite treat!</p>
+			<p class="larger">Big Chewy Chocolate Chip Cookies</p>
+			<p>The classic cookie – always a crowd pleaser.</p>
 		</div>	
 	</div>
 
 	
 	<div id="cake2" class="panel panel-2">
 		<div style="position: absolute; margin: 0px; top: 100.6px; left: 605px;" class="headline-block first center1 panel-block">
-			<p class="larger">Lemon Drizzle Loaf</p>
-			<p>After baking, this cake is drizzled with a lemon syrup that keeps it moist and also gives it just the right amount of tang</p>
+			<p class="larger">Double Chocolate Chip Cookies</p>
+			<p>Twice the chocolate – need we say more?</p>
 		</div>
 	</div>
 
 
 	<div id="cake3" style="height: 690px;" class="panel panel-3">
 		<div style="position: absolute; margin: 0px; top: 100.6px; left: 605px;" class="headline-block first center1 panel-block">
-			<p class="larger">Almond Cake</p>
-			<p>This cake is made with almond paste which we make from scratch. The indulgent middle layer is of an almond cream, also called frangipane</p>
+			<p class="larger">Peanut Butter and Chocolate Chip Brownies</p>
+			<p>Peanut butter and chocolate make a wonderful combination, especially in a crunchy cookie.</p>
 		</div>		
 	</div>
 
 	
 	<div id="cake4" style="height: 700px;" class="panel panel-4">
 		<div style="position: absolute; margin: 0px; top: 100.6px; left: 605px;" class="headline-block first center1 panel-block">
-			<p class="larger">Chocolate Pound Loaf</p>
-			<p>This is the chocolate version of the classic pound cake, with sprinkles of chocolate chips, and walnuts</p>
+			<p class="larger">Brownie Cookies</p>
+			<p>Rich, intensely chocolate, with a chewy, brownie like texture.</p>
 		</div>
 	</div>
 	
 	<div id="cake5" style="height: 690px;" class="panel panel-5">
 		<div style="position: absolute; margin: 0px; top: 100.6px; left: 605px;" class="headline-block first center1 panel-block">
-			<p class="larger">Pineapple Upside-Down Cake</p>
-			<p>This cake is wonderfully moist with sweetness from caramel and pineapple.</p>
+			<p class="larger">Lemon Sugar Cookies</p>
+			<p>Traditionally, sugar cookies are made during Christmas, but are now popular round the year. They can be made in all sorts of fun shapes!</p>
 		</div>		
 	</div>	
 	
-	<div id="cake6" style="height: 700px;" class="panel panel-6">
-		<div style="position: absolute; margin: 0px; top: 100.6px; left: 605px;" class="headline-block first center1 panel-block">
-			<p class="larger">Carrot Cake</p>
-			<p>Full of grated carrot and toasted nuts, its covered with sweet and tangy cream cheese frosting.</p>
-		</div>
-	</div>
-	
-	<div id="cake7" style="height: 700px;" class="panel panel-7">
-		<div style="position: absolute; margin: 0px; top: 100.6px; left: 605px;" class="headline-block first center1 panel-block">
-			<p class="larger">Chocolate and Orange Cake</p>
-			<p>Drizzled with freshly made orange syrup and covered with dark melted, chocolate.</p>
-		</div>
-	</div>	
 </div>
 
 <script type="text/javascript">

@@ -119,23 +119,27 @@
 	background-color: rgb(160, 181, 212);
 	/*background-image: url('../img/s7.jpg');*/
 }
-/*
+
 .services .panel-8 {
-	background-image: url('../img/s8.jpg');
+	background-color: rgb(204, 204, 204);
+	/*background-image: url('../img/s8.jpg');*/
 }
 
 .services .panel-9 {
-	background-image: url('../img/s9.jpg');
+	background-color: rgb(255, 204, 70);
+	/*background-image: url('../img/s9.jpg');*/
 }
 
 .services .panel-10 {
-	background-image: url('../img/s10.jpg');
+	background-color: rgb(91, 234, 152);
+	/*background-image: url('../img/s10.jpg');*/
 }
 
 .services .panel-11 {
-	background-image: url('../img/s11.jpg');
+	background-color: rgb(231, 234, 2);
+	/*background-image: url('../img/s11.jpg');*/
 }
-
+/*
 .services .panel-12 {
 	background-image: url('../img/s12.jpg');
 }
