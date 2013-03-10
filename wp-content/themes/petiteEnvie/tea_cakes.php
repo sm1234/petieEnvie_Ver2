@@ -6,61 +6,46 @@ get_header();
 ?>
 
 <div id="page">
-	<div id="cake1" style="height: 690px;" class="panel panel-1 current">
+<?php
+$curr = 0;
+$catalogue=new WP_Query();
+$catalogue->query('category_name=catalogue&order=ASC');
+if ($catalogue->have_posts()) : 
+while ( $catalogue->have_posts() ) : $catalogue->the_post();
+$postid = get_the_ID();
+$post_thumbnail_id = get_post_thumbnail_id();
+$feat_img = wp_get_attachment_url($post_thumbnail_id);
+?>
+<?php if ($curr == 0) { ?>
+	
+
+	<div id="cake" style="height: 690px; background-image: url('<?php echo $feat_img;  ?>')" class="panel current">
 		<header>
 		<h1></h1>
 		</header>
+		
 		<div style="position: absolute; margin: 0px; top: 100.6px; left: 605px;" class="headline-block first center1 panel-block">
-			<p class="larger">Date and Walnut Loaf</p>
-			<p>This evergreen combination is an old family favourite. It’s light, and moist - a definite treat!</p>
-		</div>	
-	</div>
-
-	
-	<div id="cake2" class="panel panel-2">
-		<div style="position: absolute; margin: 0px; top: 100.6px; left: 605px;" class="headline-block first center1 panel-block">
-			<p class="larger">Lemon Drizzle Loaf</p>
-			<p>After baking, this cake is drizzled with a lemon syrup that keeps it moist and also gives it just the right amount of tang</p>
+			<p class="larger"><?php the_title(); ?></p>
+			<p><?php the_content(); ?></p>
 		</div>
 	</div>
-
-
-	<div id="cake3" style="height: 690px;" class="panel panel-3">
+<?php } 
+else {
+?>
+<div id="cake" style="height: 690px; background-image: url('<?php echo $feat_img;  ?>')" class="panel">
+		
+		
 		<div style="position: absolute; margin: 0px; top: 100.6px; left: 605px;" class="headline-block first center1 panel-block">
-			<p class="larger">Almond Cake</p>
-			<p>This cake is made with almond paste which we make from scratch. The indulgent middle layer is of an almond cream, also called frangipane</p>
-		</div>		
-	</div>
-
-	
-	<div id="cake4" style="height: 700px;" class="panel panel-4">
-		<div style="position: absolute; margin: 0px; top: 100.6px; left: 605px;" class="headline-block first center1 panel-block">
-			<p class="larger">Chocolate Pound Loaf</p>
-			<p>This is the chocolate version of the classic pound cake, with sprinkles of chocolate chips, and walnuts</p>
+			<p class="larger"><?php the_title(); ?></p>
+			<p><?php the_content(); ?></p>
 		</div>
 	</div>
-	
-	<div id="cake5" style="height: 690px;" class="panel panel-5">
-		<div style="position: absolute; margin: 0px; top: 100.6px; left: 605px;" class="headline-block first center1 panel-block">
-			<p class="larger">Pineapple Upside-Down Cake</p>
-			<p>This cake is wonderfully moist with sweetness from caramel and pineapple.</p>
-		</div>		
-	</div>	
-	
-	<div id="cake6" style="height: 700px;" class="panel panel-6">
-		<div style="position: absolute; margin: 0px; top: 100.6px; left: 605px;" class="headline-block first center1 panel-block">
-			<p class="larger">Carrot Cake</p>
-			<p>Full of grated carrot and toasted nuts, its covered with sweet and tangy cream cheese frosting.</p>
-		</div>
-	</div>
-	
-	<div id="cake7" style="height: 700px;" class="panel panel-7">
-		<div style="position: absolute; margin: 0px; top: 100.6px; left: 605px;" class="headline-block first center1 panel-block">
-			<p class="larger">Chocolate and Orange Cake</p>
-			<p>Drizzled with freshly made orange syrup and covered with dark melted, chocolate.</p>
-		</div>
-	</div>	
-</div>
+<?php
+}
+$curr++;
+endwhile;
+endif;
+?>
 
 <script type="text/javascript">
 jQuery(document).ready(function($) {
