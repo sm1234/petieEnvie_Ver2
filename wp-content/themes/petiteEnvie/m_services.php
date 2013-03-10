@@ -22,7 +22,8 @@ require_once 'mobile_header.php';
 <div id="page">
 
 
-<img src="<?php bloginfo('template_directory')?>/img/c_s2.jpg">
+<div class="c_blue panel" style="height: 350px;">
+</div>
 <div class="c_blue panel">
 	<p class="intro">Do you take Petite Envie
 	to be your perfect wedding
@@ -40,7 +41,8 @@ require_once 'mobile_header.php';
 	and as special as your personality.</p>	
 </div>
 
-<img src="<?php bloginfo('template_directory')?>/img/c_s4.jpg">
+<div class="c_purple panel" style="height: 350px;">
+</div>
 
 <div class="c_purple panel">
 	<p class="intro">Every event is different.<br>
@@ -59,7 +61,8 @@ require_once 'mobile_header.php';
 	Enough said!</p>	
 </div>
 
-<img src="<?php bloginfo('template_directory')?>/img/c_s6_1.jpg">
+<div class="c_light-blue panel" style="height: 350px;">
+</div>
 
 <div class="c_light-blue panel">
 	<p class="intro">Fancy second helpings?
@@ -84,7 +87,8 @@ require_once 'mobile_header.php';
 	exceed their expectations every time.</p>
 </div>
 
-<img src="<?php bloginfo('template_directory')?>/img/c_s8.jpg">
+<div class="c_pink panel" style="height: 350px;">
+</div>
 
 <div class="c_pink panel">
 	<p class="intro">Fancy second helpings?
@@ -109,7 +113,8 @@ require_once 'mobile_header.php';
 	exceed their expectations every time.</p>
 </div>
 
-<img src="<?php bloginfo('template_directory')?>/img/c_s10.jpg">
+<div class="c_purple panel" style="height: 350px;">
+</div>
 
 <div class="c_purple panel">
 	<p class="intro">Fancy second helpings?

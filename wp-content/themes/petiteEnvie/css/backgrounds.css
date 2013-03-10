@@ -22,22 +22,22 @@
 
 @media (max-width: 790px){
 .services .panel-1 {
-	background-image: url('../img/c_s6.jpg') !important;
+	/*background-image: url('../img/c_s6.jpg') !important;*/
 }
 .services .panel-2 {
-	background-image: url('../img/c_s4.jpg') !important;
+	/*background-image: url('../img/c_s4.jpg') !important;*/
 }
 .services .panel-3 {
-	background-image: url('../img/c_s2.jpg') !important;
+	/*background-image: url('../img/c_s2.jpg') !important;*/
 }
 .services .panel-4 {
-	background-image: url('../img/c_s8.jpg') !important;
+	/*background-image: url('../img/c_s8.jpg') !important;*/
 }
 .services .panel-5 {
-	background-image: url('../img/c_s10.jpg') !important;
+	/*background-image: url('../img/c_s10.jpg') !important;*/
 }
 .services .panel-6 {
-	background-image: url('../img/s12.jpg') !important;
+	/*background-image: url('../img/s12.jpg') !important;*/
 }
 }
 /*process page*/

@@ -21,7 +21,8 @@ require_once 'mobile_header.php';
 <div id="page">
 
 
-<img src="<?php bloginfo('template_directory')?>/img/c_s2.jpg">
+<div class="c_blue panel" style="height: 350px;">
+</div>
 <div class="c_blue panel">
 	<p class="intro">Welcome to Petite Envie</p>
 	<p>We believe in creating the most delicious and tempting items only
@@ -32,8 +33,10 @@ require_once 'mobile_header.php';
 		We believe in creating the most delicious and tempting items only</p>	
 </div>
 
-<img src="<?php bloginfo('template_directory')?>/img/c_s4.jpg">
 
+<div class="c_purple panel" style="height: 350px;">
+	
+</div>
 <div class="c_purple panel">
 	<p class="intro">Welcome to Petite Envie</p>
 	<p>We believe in creating the most delicious and tempting items only
@@ -44,8 +47,9 @@ require_once 'mobile_header.php';
 		We believe in creating the most delicious and tempting items only</p>	
 </div>
 
-<img src="<?php bloginfo('template_directory')?>/img/c_s6_1.jpg">
 
+<div class="c_light-blue panel" style="height: 350px;">
+</div>
 <div class="c_light-blue panel">
 	<p class="intro">Welcome to Petite Envie</p>
 	<p>We believe in creating the most delicious and tempting items only
