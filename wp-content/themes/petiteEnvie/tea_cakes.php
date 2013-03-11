@@ -9,7 +9,7 @@ get_header();
 <?php
 $curr = 0;
 $catalogue=new WP_Query();
-$catalogue->query('category_name=catalogue&order=ASC');
+$catalogue->query('tag=teacake&order=ASC');
 if ($catalogue->have_posts()) : 
 while ( $catalogue->have_posts() ) : $catalogue->the_post();
 $postid = get_the_ID();

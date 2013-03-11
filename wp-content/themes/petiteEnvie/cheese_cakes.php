@@ -6,38 +6,46 @@ get_header();
 ?>
 
 <div id="page">
+<?php
+$curr = 0;
+$catalogue=new WP_Query();
+$catalogue->query('tag=cheesecake&order=ASC');
+if ($catalogue->have_posts()) : 
+while ( $catalogue->have_posts() ) : $catalogue->the_post();
+$postid = get_the_ID();
+$post_thumbnail_id = get_post_thumbnail_id();
+$feat_img = wp_get_attachment_url($post_thumbnail_id);
+?>
+<?php if ($curr == 0) { ?>
 	
-	<div id="cake1" style="height: 690px;" class="panel panel-1 current">
-		<div style="position: absolute; margin: 0px; top: 100.6px; left: 605px;" class="headline-block first center1 panel-block">
-			<p class="larger">Plain Cheesecake</p>
-			<p>The classic - a biscuit crumb and a creamy, smooth filling, baked to perfection. Ask us for the available fruit toppings.</p>
-		</div>
-	</div>
 
-
-	<div id="cake2" style="height: 690px;" class="panel panel-2">
-		<div style="position: absolute; margin: 0px; top: 100.6px; left: 605px;" class="headline-block first center1 panel-block">
-			<p class="larger">Chocolate Cheesecake</p>
-			<p>The chocolate version with three layers – a chocolate biscuit crumb, cheesecake filling and creamy ganache.</p>
-		</div>		
-	</div>
-
-	
-	<div id="cake3" style="height: 700px;" class="panel panel-3">
-		<div style="position: absolute; margin: 0px; top: 100.6px; left: 605px;" class="headline-block first center1 panel-block">
-			<p class="larger">Mixed Berry Cheesecake</p>
-			<p>Mixed berries baked into the cheesecake filling</p>
-		</div>
-	</div>
-	
-	<div id="cake4" style="height: 690px;" class="panel panel-4">
-		<div style="position: absolute; margin: 0px; top: 100.6px; left: 605px;" class="headline-block first center1 panel-block">
-			<p class="larger">No-Bake Cream Cheese Pie</p>
-			<p>Lighter version of cheesecake – creamy, tangy, perfect with a fruity topping. Available Toppings: Strawberry, Cherry</p>
-		</div>		
-	</div>	
+	<div id="cake" style="height: 690px; background-image: url('<?php echo $feat_img;  ?>')" class="panel current">
+		<header>
+		<h1></h1>
+		</header>
 		
-</div>
+		<div style="position: absolute; margin: 0px; top: 100.6px; left: 605px;" class="headline-block first center1 panel-block">
+			<p class="larger"><?php the_title(); ?></p>
+			<p><?php the_content(); ?></p>
+		</div>
+	</div>
+<?php } 
+else {
+?>
+<div id="cake" style="height: 690px; background-image: url('<?php echo $feat_img;  ?>')" class="panel">
+		
+		
+		<div style="position: absolute; margin: 0px; top: 100.6px; left: 605px;" class="headline-block first center1 panel-block">
+			<p class="larger"><?php the_title(); ?></p>
+			<p><?php the_content(); ?></p>
+		</div>
+	</div>
+<?php
+}
+$curr++;
+endwhile;
+endif;
+?>
 
 <script type="text/javascript">
 jQuery(document).ready(function($) {

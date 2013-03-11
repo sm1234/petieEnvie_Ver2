@@ -6,48 +6,46 @@ get_header();
 ?>
 
 <div id="page">
-	<div id="cake1" style="height: 690px;" class="panel panel-1 current">
+<?php
+$curr = 0;
+$catalogue=new WP_Query();
+$catalogue->query('tag=cookie&order=ASC');
+if ($catalogue->have_posts()) : 
+while ( $catalogue->have_posts() ) : $catalogue->the_post();
+$postid = get_the_ID();
+$post_thumbnail_id = get_post_thumbnail_id();
+$feat_img = wp_get_attachment_url($post_thumbnail_id);
+?>
+<?php if ($curr == 0) { ?>
+	
+
+	<div id="cake" style="height: 690px; background-image: url('<?php echo $feat_img;  ?>')" class="panel current">
 		<header>
 		<h1></h1>
 		</header>
+		
 		<div style="position: absolute; margin: 0px; top: 100.6px; left: 605px;" class="headline-block first center1 panel-block">
-			<p class="larger">Big Chewy Chocolate Chip Cookies</p>
-			<p>The classic cookie – always a crowd pleaser.</p>
-		</div>	
-	</div>
-
-	
-	<div id="cake2" class="panel panel-2">
-		<div style="position: absolute; margin: 0px; top: 100.6px; left: 605px;" class="headline-block first center1 panel-block">
-			<p class="larger">Double Chocolate Chip Cookies</p>
-			<p>Twice the chocolate – need we say more?</p>
+			<p class="larger"><?php the_title(); ?></p>
+			<p><?php the_content(); ?></p>
 		</div>
 	</div>
-
-
-	<div id="cake3" style="height: 690px;" class="panel panel-3">
+<?php } 
+else {
+?>
+<div id="cake" style="height: 690px; background-image: url('<?php echo $feat_img;  ?>')" class="panel">
+		
+		
 		<div style="position: absolute; margin: 0px; top: 100.6px; left: 605px;" class="headline-block first center1 panel-block">
-			<p class="larger">Peanut Butter and Chocolate Chip Brownies</p>
-			<p>Peanut butter and chocolate make a wonderful combination, especially in a crunchy cookie.</p>
-		</div>		
-	</div>
-
-	
-	<div id="cake4" style="height: 700px;" class="panel panel-4">
-		<div style="position: absolute; margin: 0px; top: 100.6px; left: 605px;" class="headline-block first center1 panel-block">
-			<p class="larger">Brownie Cookies</p>
-			<p>Rich, intensely chocolate, with a chewy, brownie like texture.</p>
+			<p class="larger"><?php the_title(); ?></p>
+			<p><?php the_content(); ?></p>
 		</div>
 	</div>
-	
-	<div id="cake5" style="height: 690px;" class="panel panel-5">
-		<div style="position: absolute; margin: 0px; top: 100.6px; left: 605px;" class="headline-block first center1 panel-block">
-			<p class="larger">Lemon Sugar Cookies</p>
-			<p>Traditionally, sugar cookies are made during Christmas, but are now popular round the year. They can be made in all sorts of fun shapes!</p>
-		</div>		
-	</div>	
-	
-</div>
+<?php
+}
+$curr++;
+endwhile;
+endif;
+?>
 
 <script type="text/javascript">
 jQuery(document).ready(function($) {

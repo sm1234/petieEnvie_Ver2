@@ -6,90 +6,46 @@ get_header();
 ?>
 
 <div id="page">
-	<div id="cake1" style="height: 690px;" class="panel panel-1 current">
+<?php
+$curr = 0;
+$catalogue=new WP_Query();
+$catalogue->query('tag=cupcake&order=ASC');
+if ($catalogue->have_posts()) : 
+while ( $catalogue->have_posts() ) : $catalogue->the_post();
+$postid = get_the_ID();
+$post_thumbnail_id = get_post_thumbnail_id();
+$feat_img = wp_get_attachment_url($post_thumbnail_id);
+?>
+<?php if ($curr == 0) { ?>
+	
+
+	<div id="cake" style="height: 690px; background-image: url('<?php echo $feat_img;  ?>')" class="panel current">
 		<header>
 		<h1></h1>
 		</header>
+		
 		<div style="position: absolute; margin: 0px; top: 100.6px; left: 605px;" class="headline-block first center1 panel-block">
-			<p class="larger">Vanilla Cupcakes</p>
-			<p>Vanilla cupcakes with vanilla frosting, dressed in pretty candy colors.</p>
-		</div>	
-	</div>
-
-	
-	<div id="cake2" class="panel panel-2">
-		<div style="position: absolute; margin: 0px; top: 100.6px; left: 605px;" class="headline-block first center1 panel-block">
-			<p class="larger">Chocolate Cupcakes</p>
-			<p>We add real dark chocolate to our chocolate cupcakes and the frosting. A sinful treat!</p>
+			<p class="larger"><?php the_title(); ?></p>
+			<p><?php the_content(); ?></p>
 		</div>
 	</div>
-
-
-	<div id="cake3" style="height: 690px;" class="panel panel-3">
+<?php } 
+else {
+?>
+<div id="cake" style="height: 690px; background-image: url('<?php echo $feat_img;  ?>')" class="panel">
+		
+		
 		<div style="position: absolute; margin: 0px; top: 100.6px; left: 605px;" class="headline-block first center1 panel-block">
-			<p class="larger">Chocolate Cupcakes with Vanilla Frosting</p>
-			<p>Vanilla frosting balances the dark chocolate in these cupcakes beautifully.</p>
-		</div>		
-	</div>
-
-	
-	<div id="cake4" style="height: 700px;" class="panel panel-4">
-		<div style="position: absolute; margin: 0px; top: 100.6px; left: 605px;" class="headline-block first center1 panel-block">
-			<p class="larger">Red Velvet Cupcakes</p>
-			<p>The deep red cake with white frosting makes these irresistible. Available with vanilla or cream cheese frosting</p>
+			<p class="larger"><?php the_title(); ?></p>
+			<p><?php the_content(); ?></p>
 		</div>
 	</div>
-	
-	<div id="cake5" style="height: 690px;" class="panel panel-5">
-		<div style="position: absolute; margin: 0px; top: 100.6px; left: 605px;" class="headline-block first center1 panel-block">
-			<p class="larger">Red Velvet Cake with Vanilla or Cream Cheese Frosting</p>
-			<p>This cake looks gorgeous with layers of red cake alternating with white frosting.</p>
-		</div>		
-	</div>	
-	
-	<div id="cake6" style="height: 700px;" class="panel panel-6">
-		<div style="position: absolute; margin: 0px; top: 100.6px; left: 605px;" class="headline-block first center1 panel-block">
-			<p class="larger">Fruit Cupcakes with Strawberry Coulis</p>
-			<p>The classic vanilla cake baked with pineapple tidbits, garnished with fruits, and a Strawberry coulis centre.</p>
-		</div>
-	</div>
-	
-	<div id="cake7" style="height: 700px;" class="panel panel-7">
-		<div style="position: absolute; margin: 0px; top: 100.6px; left: 605px;" class="headline-block first center1 panel-block">
-			<p class="larger">Lavender Cupcakes</p>
-			<p>Lavender infused cupcakes have a unique, subtle flavour and an amazing aroma. Give it a try if you are on the lookout for new exciting flavours.</p>
-		</div>
-	</div>
-	
-	<div id="cake8" style="height: 700px;" class="panel panel-8">
-		<div style="position: absolute; margin: 0px; top: 100.6px; left: 605px;" class="headline-block first center1 panel-block">
-			<p class="larger">Blueberry Cupcakes</p>
-			<p>A light sponge with blueberry bits in whipped cream, topped with whole blueberries.</p>
-		</div>
-	</div>
-	
-	<div id="cake9" style="height: 700px;" class="panel panel-9">
-		<div style="position: absolute; margin: 0px; top: 100.6px; left: 605px;" class="headline-block first center1 panel-block">
-			<p class="larger">Coconut Cupcakes with Pineapple Tidbits</p>
-			<p>Tropical flavoured cupcakes –they’ll remind you of refreshing pina coladas!</p>
-		</div>
-	</div>
-	
-	<div id="cake10" style="height: 700px;" class="panel panel-10">
-		<div style="position: absolute; margin: 0px; top: 100.6px; left: 605px;" class="headline-block first center1 panel-block">
-			<p class="larger">Chocolate Hazelnut Cupcakes</p>
-			<p>Tropical flavoured cupcakes –they’ll remind you of refreshing pina coladas!</p>
-		</div>
-	</div>
-	
-	<div id="cake11" style="height: 700px;" class="panel panel-11">
-		<div style="position: absolute; margin: 0px; top: 100.6px; left: 605px;" class="headline-block first center1 panel-block">
-			<p class="larger">Lemon Cupcakes</p>
-			<p>Drizzled with freshly made lemon syrup, which we also whip into the sweet and tangy frosting. Topped with candied lemon zest</p>
-		</div>
-	</div>
-	
-</div>
+<?php
+}
+$curr++;
+endwhile;
+endif;
+?>
 
 <script type="text/javascript">
 jQuery(document).ready(function($) {
