@@ -6,9 +6,6 @@ get_header();
 ?>
 <div id="page">
 	<div id="cake1" style="height: 690px;" class="panel panel-1 current">
-		<header>
-		<h1></h1>
-		</header>	
 	</div>
 
 	

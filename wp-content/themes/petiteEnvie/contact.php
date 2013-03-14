@@ -16,14 +16,14 @@ get_header();
 					<p>Address Goes Here</p>
 					<p class="maquette">Tel: XX XXXX XXXX<br>Email <a href="mailto:queries@petiteenvie.com">queries@petiteenvie.com</a></p>
 										
-					
+			<div class="newsletter_subscription" style="margin-top: 49px">	
 <?php
     		if(function_exists('fn_display_subscriptionArea'))
     		{
     		 	echo fn_display_subscriptionArea();
     		}
 ?>
-    		
+    		</div>
 			</div>
 
 			<div class="span4">

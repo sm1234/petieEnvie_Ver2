@@ -1,7 +1,4 @@
 <?php
-/*
-Template Name: About
-*/
 get_header();
 ?>
 <div id="page">

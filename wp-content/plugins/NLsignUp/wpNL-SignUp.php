@@ -8,7 +8,7 @@ function fn_display_subscriptionArea()
 {
 	
 	$output = '';	
-	$output .= '<p><span class="name-small">- Newsletter -</span></p>
+	$output .= '<p><span class="name">-<br> Newsletter <br>-</span></p>
 				<p>Keep up to date on all the goings on at Petite Envie</p>'.
 	'<form method="post">'.
 	'<input type="hidden" value="1" name="form_tools_form_id"></input>'.

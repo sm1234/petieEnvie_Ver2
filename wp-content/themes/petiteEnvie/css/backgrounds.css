@@ -43,6 +43,8 @@
 }
 /*process page*/
 
+
+
 .process .panel {
 	background-image: url(/tt.php?src=/resources/img/backgrounds/process.jpg&w=1200);
 }
@@ -85,6 +87,10 @@
 
 
 /*services page*/
+
+.services .c_panel {
+	background-image: url('../img/cakes_by_consultation.jpg');
+}
 
 .services .panel-1 {
 	background-color: rgb(120, 163, 208);

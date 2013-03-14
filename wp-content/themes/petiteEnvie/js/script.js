@@ -14,6 +14,7 @@ function resizingStuff() {
 		if(container_width_secondary<775)
 		{
 			jQuery('.center1').center(true);
+			jQuery('.center').center(true);
 			jQuery('#c_secondary > li > a').css('padding','2px 5px 3px');
 			jQuery('#prev-panel').hide();
 			jQuery('#next-panel').hide();
@@ -25,6 +26,7 @@ function resizingStuff() {
 	var left_value_secondary = (container_width_secondary - jQuery('#c_secondary').outerWidth()) / 2;
 	jQuery('.center1').show();
 	jQuery('.center1').center1(true);
+	jQuery('.center').center(true);
 	jQuery('#c_primary').css('left',left_value_primary+'px');
 	jQuery('#c_secondary').css('left',left_value_secondary+'px');
 	var pageHeight = jQuery(window).height();
@@ -35,6 +37,7 @@ function resizingStuff() {
 	{
 	//jQuery('.center1').hide();
 	jQuery('.center1').center(true);
+	jQuery('.center').center(true);
 	jQuery('#c_primary').css('left', '0%');
 	jQuery('#c_secondary').css('left','0%');
 	var pageHeight = jQuery(window).height();

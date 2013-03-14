@@ -76,10 +76,10 @@
               <li><a href="<?php bloginfo('url')?>/brownies/" rel="brownies">Brownies</a></li>
               <li><a href="<?php bloginfo('url')?>/cookies/" rel="cookies">Cookies</a></li>
               <li><a href="<?php bloginfo('url')?>/macarons/" rel="macarons">Macarons</a></li>
-              <li><a href="<?php bloginfo('url')?>/muffins/" rel="muffins">Muffins</a></li>
-              <li><a href="<?php bloginfo('url')?>/cakes-by-consultation/" rel="cakes-by-consultation">Cakes By Consultation</a></li>
+              <li><a href="<?php bloginfo('url')?>/muffins/" rel="muffins">Muffins</a></li>             
               <li><a href="<?php bloginfo('url')?>/cup-cakes/" rel="cup-cakes">Cupcakes</a></li>
-              <li><a href="<?php bloginfo('url')?>/gifts/" rel="gifts">Gifts</a></li> 
+              <li><a href="<?php bloginfo('url')?>/gifts/" rel="gifts">Gifts</a></li>
+              <li><a href="<?php bloginfo('url')?>/cakes-by-consultation/" rel="cakes-by-consultation">Cakes By Consultation</a></li> 
             </ul>            
           </div>
         </div>
