@@ -63,7 +63,7 @@ ul.primary {
 @media (min-width: 980px) {
 
 	.panel-block {
-		width: 50%;
+		width: 40%;
 	}
 
 }
@@ -113,7 +113,7 @@ nav {
 
 p {
 	font-family: 'cardo', serif;
-	font-size: 14px;
+	font-size: 12px;
 }
 
 .process p {
@@ -186,11 +186,11 @@ header {
 .services-block span.title {
 	text-transform: uppercase;
 	letter-spacing: 0.2em;
-	font: 40px 'maquette', sans-serif;
+	font: 70px 'maquette', sans-serif;
 }
 
 .larger {
-	font-size: 1.6em;
+	font-size: 1.4em;
 	margin-bottom: 1em;
 	line-height: 1.2em;
 
@@ -198,10 +198,10 @@ header {
 
 .services-block span.name {
 	display: block;
-	font: 14px 'maquette', sans-serif;
+	font: 40px 'maquette', sans-serif;
 	text-transform: uppercase;
 	letter-spacing: 0.2em;
-	margin-bottom: 1.5em;
+	margin-bottom: 0.5em;
 	line-height: 30px;
 }
 
