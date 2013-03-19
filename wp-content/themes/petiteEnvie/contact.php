@@ -4,7 +4,7 @@ Template Name: Contact
 */
 get_header();
 ?>
-<header>
+<header style="margin-bottom: 0px;">
 <h1></h1>
 </header>
 <div class="static-panel">

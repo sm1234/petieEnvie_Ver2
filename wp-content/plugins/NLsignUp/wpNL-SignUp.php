@@ -17,7 +17,7 @@ function fn_display_subscriptionArea()
     '<div class="controls"><input id="mce-EMAIL" class="" type="text" name="EMAIL" required="required" placeholder="- EMAIL ADDRESS -"
     data-toggle="popover" data-placement="right" data-content=""></input></div>'.
     '<b><font color="white"><label id="elabel"></label></font></b></div>'.
-    '<input id="mc-embedded-subscribe" type="submit" name="subscribe" value="Subscribe"></input>'.
+    '<input id="mc-embedded-subscribe" type="submit" name="subscribe" value="- SUBSCRIBE -"></input>'.
 	'</form>';
 	
 	return $output;	

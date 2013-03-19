@@ -26,6 +26,7 @@ nav .brand {
   font-size: 20px;	
 }
 
+
 @font-face {
 	font-family: 'maquette';
 	src: url('../fonts/ARSMaquettePro-Bold.eot');
@@ -42,9 +43,9 @@ nav .brand {
 	font-style: normal;
 }
 
-.maquette {
+/*.maquette {
 	font-family: 'maquette';
-}
+}*/
 
 .mb-20 {
 	margin-bottom: 30px;
@@ -112,8 +113,8 @@ nav {
 }
 
 p {
-	font-family: 'cardo', serif;
-	font-size: 12px;
+	font-family: 'Berkshire Swash', cursive;
+	font-size: 16px;
 }
 
 .process p {
@@ -186,7 +187,7 @@ header {
 .services-block span.title {
 	text-transform: uppercase;
 	letter-spacing: 0.2em;
-	font: 70px 'maquette', sans-serif;
+	font: 42px 'Berkshire Swash', cursive;
 }
 
 .larger {
@@ -198,7 +199,7 @@ header {
 
 .services-block span.name {
 	display: block;
-	font: 40px 'maquette', sans-serif;
+	font: 24px 'Berkshire Swash', cursive;
 	text-transform: uppercase;
 	letter-spacing: 0.2em;
 	margin-bottom: 0.5em;
@@ -305,7 +306,7 @@ nav ul.secondary li a {
 {
 	color: white !important;
 	text-transform: uppercase;
-	font: 30px 'maquette', sans-serif !important;
+	font: 30px 'Berkshire Swash', cursive !important;
 	letter-spacing: 0.2em;
 }
 
